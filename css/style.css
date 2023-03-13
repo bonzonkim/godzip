@@ -1,0 +1,109 @@
+#loginDiv {
+    display: flex;
+    justify-content: right;
+}
+.bestReview {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.box-group {
+    display: none;
+}
+.box-group.active {
+    display: flex;
+}
+.box-group-1 .box {
+    background-color: red;
+}
+.box-group-2 .box {
+    background-color: green;
+}
+.box-group-3 .box {
+    background-color: blue;
+}
+.box {
+    width: 200px;
+    height: 200px;
+    margin: 10px;
+}
+.button {
+    margin: 10px;
+}
+
+.recentReview {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /*place-items: center;*/
+}
+.box-group {
+    display: none;
+}
+.box-group.active {
+    display: flex;
+}
+.box-group-1 .box {
+    background-color: red;
+}
+.box-group-2 .box {
+    background-color: green;
+}
+.box-group-3 .box {
+    background-color: blue;
+}
+.box {
+    width: 200px;
+    height: 200px;
+    margin: 10px;
+}
+.button {
+    margin: 10px;
+}
+
+#recentReview {
+
+}
+
+.slider {
+    height: 50vh;
+}
+.slider img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.category-div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#bottom-info {
+    background: moccasin;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+#about {
+    display: grid;
+    place-items: center;
+}
+#discover {
+    display: grid;
+    place-items: center;
+}
+#some {
+    display: grid;
+    place-items: center;
+}
+#show-more-activity {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#category-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
