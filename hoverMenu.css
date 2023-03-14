@@ -1,0 +1,32 @@
+#parent{width: 30%;}
+.child{text-align: center;}
+.child h2{font-size: 20px;}
+.child:hover {transition:all .3s ease}
+.child > h2 {position:relative }
+.child > h2::after {
+  content: '';
+  width: 0%;
+  left: 50%;
+  height: 1px;
+  display: block;
+  position: absolute;
+  margin-top: 3px;
+  border-bottom: 2px solid black;
+  transition:all .3s ease;
+}
+.child:hover > h2::after {
+  content: '';
+  width: 100%;
+  left: 0px;
+  height: 1px;
+  display: block;
+  position: absolute;
+  margin-top: 3px;
+  border-bottom: 2px solid black;
+  transition:all .3s ease;
+
+}
+.hidden{ background-color: rgba(206, 197, 166, 0.3); width: 100%; color: black; border-radius: 15px; word-break:break-all;}
+.hidden a:link{color:black; text-decoration: none;}
+.hidden a:visited{color:black; text-decoration: none;}
+.hidden a:hover{color: black; text-decoration: underline; font-size: 110%; font-weight: 550;}

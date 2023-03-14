@@ -5,19 +5,80 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/hoverMenu.css">
     <title>Document</title>
 </head>
 <body>
 
 <input type="text" name="searchBar" placeholder="검색어"><input type="submit" name="search" value="돋보기">
-<br>
-<button>Fashion</button>
-<button>Interior</button>
-<button>Sports</button>
-<button>Toy</button>
-<button>Car</button>
-<button>Electronics</button>
+<div>
+      <!-- Attached by Hoon (03.13)-->
+      <br>
+    <div id="parent" style="display: flex;">
+        <div class="child" style="flex: 1; position: relative;">
+            <h2>Fashion</h2>
+            <div class="hidden" style="display: none; position: absolute;">
+            <p><a href="#">Hidden content</a></p>
+            <p><a href="#">Hidden content</a></p>
+            <p><a href="#">Hidden content</a></p>
+            <p><a href="#">Hidden content</a></p>
+            <p><a href="#">Hidden content</a></p>
+            </div>
+        </div>
+        <div class="child" style="flex: 1; position: relative;">
+        <h2>Interior</h2>
+        <div class="hidden" style="display: none; position: absolute;">
+            <p><a href="#">Hidden content</a></p>
+            <p><a href="#">Hidden content</a></p>
+            <p><a href="#">Hidden content</a></p>
+            <p><a href="#">Hidden content</a></p>
+            <p><a href="#">Hidden content</a></p>
+        </div>
+        </div>
+        <div class="child" style="flex: 1; position: relative;">
+        <h2>Sports</h2>
+        <div class="hidden" style="display: none; position: absolute;">
+            <p><a href="#">Hidden content</a></p>
+            <p><a href="#">Hidden content</a></p>
+            <p><a href="#">Hidden content</a></p>
+            <p><a href="#">Hidden content</a></p>
+            <p><a href="#">Hidden content</a></p>
+        </div>
+        </div>
+        <div class="child" style="flex: 1; position: relative;">
+        <h2>Toy</h2>
+        <div class="hidden" style="display: none; position: absolute;">
+            <p><a href="#">Hidden content</a></p>
+            <p><a href="#">Hidden content</a></p>
+            <p><a href="#">Hidden content</a></p>
+            <p><a href="#">Hidden content</a></p>
+            <p><a href="#">Hidden content</a></p>
+        </div>
+        </div>
+        <div class="child" style="flex: 1; position: relative;">
+        <h2>Car</h2>
+        <div class="hidden" style="display: none; position: absolute;">
+            <p><a href="#">Hidden content</a></p>
+            <p><a href="#">Hidden content</a></p>
+            <p><a href="#">Hidden content</a></p>
+            <p><a href="#">Hidden content</a></p>
+            <p><a href="#">Hidden content</a></p>
+        </div>
+        </div>
+        <div class="child" style="flex: 1; position: relative;">
+        <h2>Electronics</h2>
+        <div class="hidden" style="display: none; position: absolute;">
+            <p><a href="#">Hidden content</a></p>
+            <p><a href="#">Hidden content</a></p>
+            <p><a href="#">Hidden content</a></p>
+            <p><a href="#">Hidden content</a></p>
+            <p><a href="#">Hidden content</a></p>
+        </div>
+    </div>
+  </div>
+  <!-- Attached by Hoon (03.13)-->
+</div>
 
 <div id="loginDiv">
     <button>로그인</button>
@@ -131,6 +192,23 @@ adfsjkl;adfsjkl;adsfjkl;adsflkj;asdfjkl;adfjskl;;jklasdf
     </div>
 </div>
 
+<!-- attached by Hoon(03.14) -->
+<script>
+    const children = document.querySelectorAll('.child');
+
+    children.forEach(child => {
+      const hidden = child.querySelector('.hidden');
+  
+      child.addEventListener('mouseenter', () => {
+        hidden.style.display = 'block';
+
+      });
+  
+      child.addEventListener('mouseleave', () => {
+        hidden.style.display = 'none';
+      });
+    });
+  </script>
+  <!-- attached by Hoon(03.14) -->
 </body>
 </html>
-
