@@ -1,0 +1,203 @@
+/* Set box-sizing to border-box so that padding and border are included in the width and height of elements */
+* {
+  box-sizing: border-box;
+}
+
+/* Apply a CSS reset to remove default margins and paddings from elements */
+html {
+  margin: 0;
+  padding: 0;
+}
+
+/* Set a minimum height for the body element to ensure that the layout always fills the viewport */
+body {
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  color: #333;
+  background: moccasin;
+}
+
+/* Set default margins and paddings for the elements */
+h1, h2, h3, p, ul, ol, li, pre {
+  margin: 0;
+  padding: 0;
+}
+
+.h1{
+  background-color: antiquewhite;
+
+
+}
+
+/* Set a maximum width for the layout */
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Set the login buttons to be aligned to the right */
+
+#login-btn {
+  padding: 5px 10px;
+  border: none;
+  background-color: #d32f2f;
+  color: white;
+  cursor: pointer;
+  float: right;
+}
+
+#login-btn:hover {
+  background-color: #d32f2f;
+}
+
+#logout-btn {
+  padding: 5px 10px;
+  border: none;
+  background-color: #d32f2f;
+  color: white;
+  cursor: pointer;
+  float: right;
+}
+
+#logout-btn:hover {
+  background-color: #d32f2f;
+}
+
+#sigh-up {
+  padding: 5px 10px;
+  border: none;
+  background-color: #d32f2f;
+  color: white;
+  cursor: pointer;
+  float: right;
+}
+
+#sigh-up:hover {
+  background-color: #d32f2f;
+}
+
+
+
+/* Set the title to be centered and at the top */
+header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Set the map to be centered and under the title */
+#map {
+  margin: 0 auto;
+  height: 500px;
+  width: 100%;
+}
+
+#wrap {
+  position: relative;
+  min-height: 100%;
+  padding-bottom: 200px
+}
+#bottom-info {
+  background: #9E9E9E;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  opacity: 80%;
+  position: absolute;
+  bottom: 0;
+}
+#about {
+  display: grid;
+  place-items: center;
+}
+#discover {
+  display: grid;
+  place-items: center;
+}
+#some {
+  display: grid;
+  place-items: center;
+}
+
+
+
+/* Set each info box to have a fixed width and some padding */
+.info-box {
+  width: 300px;
+  padding: 20px;
+}
+
+/* Set each info box to have a margin on the right and bottom */
+.info-box + .info-box {
+  margin-left: 20px;
+  margin-bottom: 20px;
+}
+
+/* Set the background color of each info box */
+
+/* Set the font size and line height of each heading in the info boxes */
+.info-box h2 {
+  line-height: 1.2;
+  margin-bottom: 10px;
+}
+
+/* Set the font size and line height of the paragraph in the info boxes */
+.info-box p {
+  line-height: 1.5;
+  margin-bottom: 0;
+}
+
+/* Add media queries to adjust the layout for smaller screens */
+
+/* Set the font size of the text to be smaller on screens smaller than 600px */
+@media screen and (max-width: 600px) {}
+
+  /* Set the width of the info boxes to be 100% on smaller screens */
+  .info-box {
+    width: 100%;
+    margin: 0 0 20px 0;
+  }
+
+  /* Remove the margin left and bottom of the last info box on smaller screens */
+  .info-box:last-child {
+    margin: 0;
+  }
+
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  border: 1px solid rgb(175, 62, 62);
+}
+
+td {
+  padding: 10px;
+  text-align: center;
+}
+
+.button {
+  display: block;
+  width: 100%;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+.category {
+  display: none;
+  position: absolute;
+  background-color: white;
+  border: 1px solid black;
+  padding: 10px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  margin-bottom: 5px;
+}
+
