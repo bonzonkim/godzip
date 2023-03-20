@@ -1,0 +1,179 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/categoryPage.css">
+    <link rel="stylesheet" href="css/hoverMenu.css">
+    <link rel="stylesheet" href="css/pageBottomStyle.css">
+    <link rel="stylesheet" href="css/publicTopStyle.css">
+    <script defer src = "js/bottomTopBtn.js"></script>
+    <script defer src = "js/topHoverMenu.js"></script>
+    <title>CategoryCar</title>
+</head>
+<body>
+    <div id = "wrap">
+    <div id="childTopDiv">
+        <div id="toptopBox">
+        <img id="mainLogo" src="img/godzip_white_cropped.png" alt="로고">
+        <div id="searchbarBox">
+        <input type="text" name="searchBar" placeholder="검색어"><input type="button" class="searchButton" name="search" value="SEARCH">
+        </div>
+        <div id="loginOutBox">
+        <input type="button" class="searchButton" name="login" value="LogIn">
+        <input type="button" class="searchButton" name="logout" value="LogOut">
+        </div>
+        </div>
+        <!-- Attached by Hoon (03.13)-->
+        <br>
+        <div id="parent" style="display: flex;">
+            <div class="child" style="flex: 1; position: relative;">
+                <h2>Car</h2>
+                <div class="hidden" style="display: none; position: absolute;">
+                    <p><a href="#">Carwash</a></p>
+                    <p><a href="#">Component</a></p>
+                    <p><a href="#">Exterior</a></p>
+                    <p><a href="#">Interior</a></p>
+                </div>
+            </div>
+            <div class="child" style="flex: 1; position: relative;">
+                <h2>Digital</h2>
+                <div class="hidden" style="display: none; position: absolute;">
+                    <p><a href="#">Appliances</a></p>
+                    <p><a href="#">Computer</a></p>
+                    <p><a href="#">Gadget</a></p>
+                    <p><a href="#">Iot</a></p>
+                    <p><a href="#">Mobile</a></p>
+                    <p><a href="#">Wearable</a></p>
+                </div>
+            </div>
+            <div class="child" style="flex: 1; position: relative;">
+                <h2>Fashion</h2>
+                <div class="hidden" style="display: none; position: absolute;">
+                    <p><a href="#">Female</a></p>
+                    <p><a href="#">Male</a></p>
+                    <p><a href="#">Unisex</a></p>
+                    <p><a href="#">Children</a></p>
+                </div>
+            </div>
+            <div class="child" style="flex: 1; position: relative;">
+                <h2>Home</h2>
+                <div class="hidden" style="display: none; position: absolute;">
+                    <p><a href="#">Furniture</a></p>
+                    <p><a href="#">Organize</a></p>
+                    <p><a href="#">Bedding</a></p>
+                    <p><a href="#">Light</a></p>
+                    <p><a href="#">Bathroom</a></p>
+                </div>
+            </div>
+            <div class="child" style="flex: 1; position: relative;">
+                <h2>Sports</h2>
+                <div class="hidden" style="display: none; position: absolute;">
+                    <p><a href="#">Cycling</a></p>
+                    <p><a href="#">Golf</a></p>
+                    <p><a href="#">Skates</a></p>
+                    <p><a href="#">Swimming</a></p>
+                    <p><a href="#">Tennis</a></p>
+                </div>
+            </div>
+            <div class="child" style="flex: 1; position: relative;">
+                <h2>Toy</h2>
+                <div class="hidden" style="display: none; position: absolute;">
+                    <p><a href="#">Block</a></p>
+                    <p><a href="#">Doll</a></p>
+                    <p><a href="#">Figure</a></p>
+                    <p><a href="#">game</a></p>
+                    <p><a href="#">Puzzle</a></p>
+                    <p><a href="#">Robot</a></p>
+                </div>
+            </div>
+    
+        </div><!-- id: parent -->
+    </div><!-- id: childTopDiv -->
+
+
+<!-- 여기서부터 카테고리화면 -->
+<div id="category-cate">
+    <h1>Car</h1>
+</div>
+
+<div class="category-catediv">
+    <div class="catebox-group catebox-group-1 active">
+        <div class="catebox">
+            <a href="MainPage.html"> 
+                <img src="img/category/car/carwash.png">
+                <span class = "text">CarWash</span>
+            </a>
+        </div>
+        <div class="catebox">
+            <a href="MainPage.html">
+                <img src="img/category/car/component.png">
+                <span class = "text">Component</span>
+            </a>
+        </div>
+        <div class="catebox">
+            <a href="MainPage.html">
+                <img src="img/category/car/exterior.png">
+                <span class = "text">Exterior</span>
+            </a>
+        </div>
+        <div class="catebox">
+            <a href="MainPage.html">
+                <img src="img/category/car/interior.png">
+                <span class = "text">Interior</span>
+            </a>
+        </div>
+    </div>
+</div>
+<!-- 카테고리화면 끝 -->
+
+<!-- 하단 고정 -->
+<div class="bottom_info">
+    <div id="fixedButton" onclick="TOP();">TOP</div>
+    <div class="footer1">
+        <div class="w companyInfo"><a href="">회사소개</a></div>
+        <div class="line"></div>
+        <div class="w companyLoc"><a href="">회사위치</a></div>
+        <div class="line"></div>
+        <div class="w Press"><a href="">보도자료</a></div>
+        <div class="line"></div>
+        <div class="w Help"><a href="">고객센터</a></div>
+    </div>
+
+
+    <div class="footer2">
+
+        <div class="foot2box1">
+            <img src="img/godzip_white_cropped.png">
+        </div>
+        <div class="line2"></div>
+        <div class="foot2box2">
+            <pre>
+            대표이사: 김본전 간판사인 <br>
+            사업자등록번호: 851-87-00622 <br>
+            주소: (06234) 서울 강남구 테헤란로14길 6 남도빌딩 2층, 3층, 4층 <br>
+            전화번호: 1544-9970 <br>
+            이메일: KHAcademy@gmail.com
+            </pre>
+        </div>
+        <div class="line2"></div>
+        <div class="foot2box3">
+            <pre>
+            이용약관 · 법적고지 <br>
+            개인정보처리방침 <br>
+            청소년보호방침 <br>
+            영상정보처리기기 운영/관리 방침 <br>
+            이메일무단수집거부 <br>
+        </pre>
+        </div>
+    </div>
+    <div class="footer3">
+        Copyright ⓒ GODZIP. All Rights Reserved.
+    </div>
+</div>
+</div>
+</body>
+</html>
+
