@@ -1,0 +1,173 @@
+/*
+=====헤더=====
+*/
+
+#header {
+    display: grid;
+    grid-template-columns: 1fr 3fr 3fr;
+}
+#logoPic {
+    padding-top: 0px;
+    width: 80px;
+    height: 80px;
+    border-radius: 15px;
+}
+.search {
+    background: white;
+    border-radius: 5px;
+}
+/*
+=====게시글 작성=====
+*/
+.write-board {
+    width: 700px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #e8e8e8;
+    box-shadow: 2px 2px 10px #ccc;
+}
+
+.write-header {
+    text-align: center;
+    margin-bottom: 20px
+}
+
+.write-header .option {
+    display: flex;
+    justify-content: start;
+    margin: 0;
+    color: black;
+}
+
+.write-group {
+    margin-bottom: 15px;
+}
+
+label {
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+textarea{
+    width: 100%;
+    height: 500px;
+    padding: 12px 20px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    transition: 0.5s;
+}
+input[name="title"] {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+input[type="submit"] {
+    /*width: 100%;*/
+    background-color: #333;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #ccc;
+    color: black;
+}
+/*
+=====제목 인풋=====
+*/
+.form__group {
+    position: relative;
+}
+
+.form__field {
+    border: 1px solid silver !important;
+    border-radius: 5px;
+    box-sizing: border-box;
+    color: #313a46;
+    width: 300px;
+    height: 40px;
+    padding: 0rem 15px;
+}
+
+.form__field::placeholder {
+    color: transparent;
+}
+
+.form__field:placeholder-shown ~ .form__label {
+    top: 10px;
+    border-right: none;
+    border-left: none;
+}
+
+.form__label {
+    background-color: white;
+    border-left: 1px solid silver;
+    border-right: 1px solid silver;
+    color: #9b9b9b;
+    display: block;
+    font-size: .9em;
+    margin-left: 10px;
+    padding: 0 10px;
+    pointer-events: none;
+    position: absolute;
+    top: -10px;
+    transition: 0.2s;
+}
+
+.form__field:focus {
+    border: 1px solid #9b9b9b !important;
+    outline: none;
+}
+
+.form__field:focus ~ .form__label {
+    background-color: white;
+    border-right: 1px solid #9b9b9b;
+    border-left: 1px solid #9b9b9b;
+    color: #9b9b9b;
+    font-size: .9em;
+    margin-left: 10px;
+    padding: 0 10px;
+    position: absolute;
+    top: -10px;
+    transition: 0.2s;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
