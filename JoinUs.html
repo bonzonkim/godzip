@@ -1,0 +1,254 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="/css/joinStyle.css">
+    <link rel="stylesheet" href="css/pageBottomStyle.css">
+    <link rel="stylesheet" href="css/publicTopStyle.css">
+    <title>Join us</title>
+    <script defer src="/js/joinscript.js"></script>
+</head>
+<body>
+<div id="wrap">
+
+    <div id="childTopDiv">
+        <div id="toptopBox">
+            <img id="mainLogo" src="img/godzip_white_cropped.png" alt="로고">
+            <div id="searchbarBox">
+                <input type="text" name="searchBar" placeholder="검색어"><input type="button" class="searchButton" name="search" value="SEARCH">
+            </div>
+            <div id="loginOutBox">
+                <input type="button" class="searchButton" name="login" value="LogIn">
+                <input type="button" class="searchButton" name="logout" value="LogOut">
+            </div>
+        </div>
+    </div><!-- id: childTopDiv -->
+
+    <div id="middleDiv">
+        <form action="">
+        <div id="table1Div">
+            <table id="table1">
+                <tr>
+                <th colspan="3" id="title"><h2>회원가입</h2></th>
+                </tr>
+                <tr>
+                <td colspan="3" id="welcome">Welcome to join us, Start collecting reviews today!</td>
+                </tr>
+                <tr id="googleNaver">
+                <td colspan="3"><a href="https://accounts.google.com/o/oauth2/auth?client_id=YOUR_CLIENT_ID&redirect_uri=YOUR_REDIRECT_URI&response_type=code&scope=email%20profile"><img width="170px" height="40px" class="googleImg" src="img/google.png"/></a>
+                <a href="https://nid.naver.com/oauth2.0/authorize?client_id=YOUR_CLIENT_ID&redirect_uri=YOUR_REDIRECT_URI&response_type=code&state=STATE_STRING"><img width="170px" height="40px" class="naverImg" src="img/naver.png"/></a></td>
+                </tr>
+                <tr>
+                <td colspan= "3" style="width: 300%;"  class="hr-sect">OR</td>
+                </tr>
+                <tr>
+                <td colspan="3">
+                    *필수 입력 항목
+                </td>
+                </tr>
+                <tr>
+                <td colspan="3">
+                    <input type="text" name="memberId" placeholder="ID" required>
+                </td>
+                </tr>
+                <tr>
+                <td colspan="3">
+                    <input type="password" name="memberPwd" placeholder="Password" required>
+                </td>
+                </tr>
+                <tr>
+                <td colspan="3">
+                    <input type="password" name="confirmMemberPwd" placeholder="Confirm Password" required>
+                </td>
+                </tr>
+                <tr>
+                <td style="width: 50%;">
+                    <input type="text" name="memberName" id="memberFirstName" placeholder="First Name" required>
+                </td>
+                <td style="width: 50%;">
+                    <input type="text" name="memberName" id="memberLastName" placeholder="Last Name" required>
+                </td>
+                </tr>
+                <tr>
+                <td colspan="3">
+                    <input type="email" name="memberEmail" id="memberEmail" placeholder="Email" required>
+                </td>
+                </tr>
+                <tr>
+                <td colspan="3">
+                    <input type="text" name="memberNick" id="memberNick" placeholder="Nick Name" required>
+                </td>
+                </tr>
+                <tr>
+                <td colspan="3">
+                    <label for="phone">Phone:</label>
+                </td>
+                </tr>
+                <tr>
+                <td>
+                    <select id="countryCode">
+                    <option value="82">대한민국 (+82)</option>
+                    <option value="1">미국 (+1)</option>
+                    <option value="81">일본 (+81)</option>
+                    <option value="86">중국 (+86)</option>
+                    </select>
+                </td>
+                <td>
+                    <input type="tel" id="phone" name="phone" placeholder="Phone Number" required>
+                </td>
+                </tr>
+                <tr>
+                <td colspan="3">Birthday</td>
+                </tr>
+                <tr>
+                <td>  
+                    <label for="year">Year:</label>
+                    <select id="year" class="dob" name="year">
+                    </select>
+                </td>
+                <td> 
+                    <label for="month">Month:</label>    
+                    <select id="month" class="dob" name="month"></select>
+                </td>
+                <td>
+                    <label for="day">Day:</label>     
+                    <select id="day" class="dob" name="day"></select>
+                </td>
+                </tr>
+                <tr>
+                <td colspan="3">비밀번호 찾기 질문입니다.</td> 
+                </tr>
+                <tr>
+                <td>
+                    <label for="securityQuestion">Security Question:</label>
+                    <select id="securityQuestion" name="securityQuestion">
+                    <option selected>Select Question</option>
+                    <option value="Q1">Q1</option>
+                    <option value="Q2">Q2</option>
+                    <option value="Q3">Q3</option>
+                    <option value="Q4">Q4</option>
+                    <option value="Q5">Q5</option>
+                    </select>
+                </td>
+                <td>
+                    <label for="securityAnswer">Security Answer:</label>
+                    <input type="text" id="securityAnswer" name="securityAnswer" placeholder="Answer">
+                </td>
+                </tr>
+            </table>
+        </div>
+        <div id="table2Div">
+            <table id="table2">
+                <tr>
+                <td colspan="3">
+                    *Optional
+                </td>
+                </tr>
+                <tr>
+                <td>키/Height(cm)</td>
+                <td><input type="number" name="height" placeholder="ex. 178"></td>
+                </tr>
+                <tr>
+                <td>몸무게/Weight(kg)</td>
+                <td><input type="number" name="weight" placeholder="ex. 80"></td>
+                </tr>
+                <tr>
+                <td>국적/nation</td>
+                <td>
+                    <select name="nationality">
+                    <option selected>Select nationality</option>
+                    <option value="KOR">한국</option>
+                    <option value="USA">미국</option>
+                    <option value="JPN">일본</option>
+                    <option value="CHN">중국</option>
+                    <option value="EUR">유럽</option>
+                    </select>
+                </td>
+                </tr>
+                <tr>
+                <td id="robot" colspan="3">
+                    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+                    <script type="text/javascript">
+                    function onSubmit() {
+                    console.log('-- recaptcha 완료');
+                    }
+                    </script>
+                    <div class="captcha-submit">
+                    <div id="recaptcha" class="g-recaptcha" data-sitekey="6LfkiwYlAAAAAC2xzJMPLESbV0ldOSCk7_FX43zq" data-callback="onSubmit"></div>
+                        <div class="submitbutton">
+                        <input type="hidden" name="mv_powerbook">
+                        <!-- <input style="width: 60%;" value="Send" type="submit" id="submit" class="form-submit" disabled /> -->
+                    </div>
+                    </div>
+                </td>
+                </tr>
+                <tr>
+                <td></td>
+                <td colspan="3">
+                    <button class="button">
+                    <span class="button_lg">
+                        <span class="button_sl"></span>
+                        <span class="button_text">Join Now</span>
+                    </span>
+                </button>
+                </td>
+                </tr>
+            </table>
+        </div>
+        </form>
+    </div>
+
+    <!-- 하단 고정 -->
+    <div class="bottom_info"></div>
+    <div id="fixedButton" onclick="TOP();">TOP</div>
+    <div class="footer1">
+        <div class="w companyInfo"><a href="">회사소개</a></div>
+        <div class="line"></div>
+        <div class="w companyLoc"><a href="">회사위치</a></div>
+        <div class="line"></div>
+        <div class="w Press"><a href="">보도자료</a></div>
+        <div class="line"></div>
+        <div class="w Help"><a href="">고객센터</a></div>
+    </div>
+
+
+    <div class="footer2">
+
+        <div class="foot2box1">
+            <img src="img/godzip_white_cropped.png">
+        </div>
+        <div class="line2"></div>
+        <div class="foot2box2">
+            <pre>
+            대표이사: 김본전 간판사인 <br>
+            사업자등록번호: 851-87-00622 <br>
+            주소: (06234) 서울 강남구 테헤란로14길 6 남도빌딩 2층, 3층, 4층 <br>
+            전화번호: 1544-9970 <br>
+            이메일: KHAcademy@gmail.com
+            </pre>
+        </div>
+        <div class="line2"></div>
+        <div class="foot2box3">
+            <pre>
+            이용약관 · 법적고지 <br>
+            개인정보처리방침 <br>
+            청소년보호방침 <br>
+            영상정보처리기기 운영/관리 방침 <br>
+            이메일무단수집거부 <br>
+        </pre>
+        </div>
+    </div>
+    <div class="footer3">
+        Copyright ⓒ GODZIP. All Rights Reserved.
+    </div>
+
+</div>
+
+
+</body>
+<script src="js/bottomTopBtn.js"></script>
+<script src="js/topHoverMenu.js"></script>
+</html>

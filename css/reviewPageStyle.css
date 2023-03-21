@@ -1,0 +1,221 @@
+form{
+  height: 100%;
+}
+
+#childMiddleDiv{
+  display: flex;
+  margin-top: 10px;  
+  margin-bottom: 10px;
+  justify-content: center;
+  align-items: center;
+}
+#inChildMiddle{
+  width: 60%;
+}
+
+#productInfo{
+ display: flex;
+}
+#productInfo-child{
+  margin-top: 20px;
+  margin-left: 30px;
+}
+
+#totalReviews{
+  display: flex;
+}
+
+#totalReviews #totalReviewCount{
+  margin-top: 5px;
+  font-size: 20px;
+  font-weight: 800;
+  display: flex;
+}
+#reviewDetail #totalReviewCount {
+ text-align: center;
+ line-height: 0;
+}
+#reviewDetail {
+  display: flex;
+}
+
+#reviewDetail-division2{
+  margin-left: 10%;
+  margin-top: 20px;
+}
+.review-container{
+  padding-top: 20px;
+}
+
+#buttonLine {
+  text-align: center;
+}
+
+
+#showMore{
+  text-align: center;
+  margin-bottom: 0;
+}
+
+
+.productName {
+  display: inline;
+}
+/*--리뷰 필터 관련--*/
+.filter-dropdown {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 1;
+  display: none;
+}
+
+.filter-dropdown.show {
+  display: block;
+}
+
+/*--리뷰관련--*/
+.review-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.review {
+  margin-bottom: 10px;
+}
+
+
+
+/*-- 별점 주기 css--*/
+
+.star-rating {
+  border:solid 1px #ccc;
+  display:flex;
+  flex-direction: row-reverse;
+  font-size:1.5em;
+  justify-content:space-around;
+  padding:0 .5em;
+  text-align:center;
+  width:8em;
+  height: 1.7em;
+}
+
+.star-rating input {
+  display:none;
+}
+
+.star-rating label {
+  color:#ccc;
+  cursor:pointer;
+}
+
+.star-rating :checked ~ label {
+  color:#f90;
+}
+
+.star-rating label:hover,
+.star-rating label:hover ~ label {
+  color:#fc0;
+}
+
+/*--리뷰화면안에 CSS--*/
+.inReview {
+  background-color: #FCECD3;
+  color: black;
+  font-size: 14px;
+
+  padding: 5px 5px;
+  border-radius: 1em;
+  cursor: pointer;
+  transition: 0.1s ease;
+  border-width: 0;
+  box-shadow: 1px 5px 0 0 #f90;
+}
+
+.inReview:hover {
+  transform: translateY(-4px);
+  box-shadow: 1px 9px 0 0 #0e285d;
+}
+
+.inReview:active {
+  transform: translateY(4px);
+  box-shadow: 0px 0px 0 0 #0e285d;
+}
+
+/*--신고버튼 CSS--*/
+.reportBtn {
+  margin-left: 70%;
+  position: relative;
+  font-size: 0.9em;
+  padding: 0.5em 1.0em;
+  background-color: #BF0426;
+  text-decoration: none;
+  border: none;
+  border-radius: 0.5em;
+  color: #DEDEDE;
+  box-shadow: 0.5em 0.5em 0.5em rgba(0, 0, 0, 0.3);
+}
+
+.reportBtn::before {
+  position: absolute;
+  content: '';
+  height: 0;
+  width: 0;
+  top: 0;
+  left: 0;
+  background: linear-gradient(135deg, rgba(33,33,33,1) 0%, rgba(33,33,33,1) 50%, rgba(150,4,31,1) 50%, rgba(191,4,38,1) 60%);
+  border-radius: 0 0 0.5em 0;
+  box-shadow: 0.2em 0.2em 0.2em rgba(0, 0, 0, 0.3);
+  transition: 0.3s;
+}
+
+.reportBtn:hover::before {
+  width: 1.6em;
+  height: 1.6em;
+}
+
+.reportBtn:active {
+  box-shadow: 0.2em 0.2em 0.3em rgba(0, 0, 0, 0.3);
+  transform: translate(0.1em, 0.1em);
+}
+
+
+/*--리뷰쓰기, 공유, 필터 버튼 CSS--*/
+.insideBtns {
+  width: 140px;
+  height: 40px;
+  color: black;
+  border-radius: 5px;
+  margin-left: 20px;
+  padding: 10px 25px;
+  font-family: 'Lato', sans-serif;
+  font-weight: 600;
+  background: transparent;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+  box-shadow: inset 2px 2px 2px 0px rgba(255,255,255,.5),
+    7px 7px 20px 0px rgba(0,0,0,.1),
+    4px 4px 5px 0px rgba(0,0,0,.1);
+  outline: none;
+ }
+ 
+ .insideBtns {
+  background: rgb(96,9,240);
+  background: linear-gradient(0deg, #c2a87e  0%, #f6c371 100%);
+  border: none;
+ }
+ 
+ .insideBtns:before {
+  height: 0%;
+  width: 2px;
+ }
+ 
+ .insideBtns:hover {
+  box-shadow: 4px 4px 6px 0 rgba(255,255,255,.5),
+               -4px -4px 6px 0 rgba(116, 125, 136, .5), 
+     inset -4px -4px 6px 0 rgba(255,255,255,.2),
+     inset 4px 4px 6px 0 rgba(0, 0, 0, .4);
+ }
+ 
