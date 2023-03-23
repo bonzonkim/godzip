@@ -6,154 +6,69 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>회원관리페이지</title>
   
-  <link rel="stylesheet" href="/publicTopStyle.css">
-  <link rel="stylesheet" href="/hoverMenu.css">
-  <link rel="stylesheet" href="/page_bottom_style.css">
-	<link rel="stylesheet" href="/member_Management.css">
+  <link rel="stylesheet" href="/css/login.css">
+  <link rel="stylesheet" href="/css/hoverMenu.css">
+	<link rel="stylesheet" href="/css/member_Management.css">
 
 </head>
 <body>
-  <div id="childTopDiv">
-    <div id="toptopBox">
-      <img id="mainLogo" src="/img/godzip_white.png" alt="로고">
-    <div id="searchbarBox">
-    <input type="text" name="searchBar" placeholder="검색어"><input type="button" class="searchButton" name="search" value="SEARCH">
-    </div>
-    <div id="loginOutBox">
-    <input type="button" class="searchButton" name="login" value="LogIn">
-    <input type="button" class="searchButton" name="logout" value="LogOut">
-    </div>
-    </div>
-    <!-- Attached by Hoon (03.13)-->
-    <br>
-   
-  
-  
-
+<iframe src="/common_HTML/publicTopStyle.html" width="100%" height="80vh" frameborder=0 framespacing=0 marginheight=0 marginwidth=0 scrolling=no vspace=0></iframe>
 
 	
-<main>
-	<div class="search-container">
-		<label for="search-bar">회원검색</label>
-		<input type="text" id="search-bar" name="search-bar">
-		<button id="search-btn">확인</button>
 
-	</div>
+	
 	<center><h1 class="h1" style="background-color: antiquewhite;">회원관리</h1></center>
+<main>
+	<div id="searchMemberList">
+    <input type="text" placeholder="회원검색"><input type="button" value="회원찾기">
+		<input type="button" value="신고내역보기">
+  </div>
 
 	<table class="table">
 		<thead>
-			<tr>
-				<th><input type="checkbox" class="select-member"></th>
-				<th>아이디</th>
-				<th>닉네임</th>
-				<th>이메일</th>
-				<th>최근 작성리뷰(링크)</th>
-			</tr>
-			<tr>
-				<th><input type="checkbox" class="select-member"></th>
-				<th>CJY</th>
-				<th>최진영</th>
-				<th>CJY@navar.com</th>
-				<th>제목</th>
-			</tr>
-			<tr>
-				<th><input type="checkbox" class="select-member"></th>
-				<th>CJY</th>
-				<th>최진영</th>
-				<th>CJY@navar.com</th>
-				<th>제목</th>
-			</tr>
-			<tr>
-				<th><input type="checkbox" class="select-member"></th>
-				<th>CJY</th>
-				<th>최진영</th>
-				<th>CJY@navar.com</th>
-				<th>제목</th>
-			</tr>
-			<tr>
-				<th><input type="checkbox" class="select-member"></th>
-				<th>CJY</th>
-				<th>최진영</th>
-				<th>CJY@navar.com</th>
-				<th>제목</th>
-			</tr>
-			<tr>
-				<th><input type="checkbox" class="select-member"></th>
-				<th>CJY</th>
-				<th>최진영</th>
-				<th>CJY@navar.com</th>
-				<th>제목</th>
-			</tr>
-			<tr>
-				<th><input type="checkbox" class="select-member"></th>
-				<th>CJY</th>
-				<th>최진영</th>
-				<th>CJY@navar.com</th>
-				<th>제목</th>
-			</tr>
-			<tr>
-				<th></th>
-				<th><button id="suspend-btn">회원정지</button></th>
-				<th></th>
-				<th></th>
-				<th></th>
-			</tr>
+			<c:forEach items="${boardList}" var="bvo">
+						<tr>
+							<td><input type="checkbox" class="select-all"></td>
+							<td>${신고글(링크)}</td>
+							<td>${신고댓글(링크)}</td>
+							<td>${신고사유}</td>
+							<td>${신고당한회원ID}</td>
+						</tr>
+			</c:forEach>
+						<tr>
+							<td><input type="checkbox" class="select-member"></td>
+							<td colspan="4">회원을 직접 검색하는 것이 가능하며</td>
+						</tr>
+						<tr>
+							<td><input type="checkbox" class="select-member"></td>
+							<td colspan="4">신고글, 신고댓글 하나라도 있으면 신고내역보기 눌렀을때 리스트에 포함</td>
+						</tr>
+						<tr>
+							<td><input type="checkbox" class="select-member"></td>
+							
+						</tr>
+						<tr>
+							<td><input type="checkbox" class="select-member"></td>
+							
+						</tr>
+						<tr>
+							<td><input type="checkbox" class="select-member"></td>
+							
+						</tr>
+						<tr>
+							<td><input type="checkbox" class="select-member"></td>
+							
+						</tr>
 		</thead>
-		<tbody id="member-list">
-			<!-- This is where the list of members will be displayed -->
-		</tbody>
 	</table>
+	<button id="quit-btn">회원정지</button>
 </main>
 
+<script src="/js/topHoverMenu.js"></script>
+<script src="/js/member_Management.js"></script>
+<iframe src="/common_HTML/pageBottomStyle.html" width="100%" height="250vh" frameborder=0 framespacing=0 marginheight=0 marginwidth=0 scrolling=no vspace=0></iframe>
 
 
-    <div class="footer2">
-    
-      <div class="foot2box1">
-        <img src="/img/godzip_white_cropped.png">
-      </div>
-      <div class="line2"></div>
-      <div class="foot2box2">
-          <pre>
-          대표이사: 김본전 간판사인 <br>
-          사업자등록번호: 851-87-00622 <br>
-          주소: (06234) 서울 강남구 테헤란로14길 6 남도빌딩 2층, 3층, 4층 <br>
-          전화번호: 1544-9970 <br>
-          이메일: KHAcademy@gmail.com
-          </pre>
-      </div>
-      <div class="line2"></div>
-      <div class="foot2box3">
-          <pre>
-          이용약관 · 법적고지 <br>
-          개인정보처리방침 <br>
-          청소년보호방침 <br>
-          영상정보처리기기 운영/관리 방침 <br>
-          이메일무단수집거부 <br>
-      </pre>
-      </div>
-  </div>
-  <div class="footer3">
-      Copyright ⓒ GODZIP. All Rights Reserved.
-  </div>
-
-  <script>
-    const children = document.querySelectorAll('.child');
-  
-    children.forEach(child => {
-        const hidden = child.querySelector('.hidden');
-  
-        child.addEventListener('mouseenter', () => {
-            hidden.style.display = 'block';
-  
-        });
-  
-        child.addEventListener('mouseleave', () => {
-            hidden.style.display = 'none';
-        });
-    });
-  </script>
 
 
 </body>
