@@ -42,103 +42,14 @@
     padding: 5px 20px;
 }
 
-/*table {*/
-/*    border-collapse: collapse;*/
-/*    width: 100%;*/
-/*}*/
-/*th, td {*/
-/*    border-bottom: 1px solid #ddd;*/
-/*    text-align: left;*/
-/*    padding: 8px;*/
-/*}*/
-/*tr:nth-child(even) {*/
-/*    background-color: #f2f2f2;*/
-/*}*/
-/*.outer-board {*/
-/*    display: flex;*/
-/*    justify-content: center;*/
-/*    align-items: center;*/
-/*}*/
-/*.board {*/
-/*    width: 800px;*/
-/*    height: 800px;*/
-/*    border: 1px solid #ccc;*/
-/*    border-radius: 4px;*/
-/*    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);*/
-/*    overflow: hidden;*/
-/*    margin: 10px;*/
-/*}*/
+#qna-write-btn-div {
+    display: flex;
+    width: 71%;
+    justify-content: right;
+    align-items: end;
+    padding-bottom: 10px;
 
-/*.board-header {*/
-/*    background-color: #333;*/
-/*    text-align: center;*/
-/*    border-radius: 15px;*/
-/*}*/
-
-/*.board-header .text-header {*/
-/*    margin: 0;*/
-/*    font-size: 18px;*/
-/*    color: rgb(255, 255, 255);*/
-/*}*/
-
-/*.board-body {*/
-/*    padding: 16px;*/
-
-/*}*/
-
-/*.group {*/
-/*    margin-bottom: 10px;*/
-/*}*/
-
-/*.group label {*/
-/*    display: block;*/
-/*    font-size: 14px;*/
-/*    color: #333;*/
-/*    font-weight: bold;*/
-/*    margin-bottom: 1px;*/
-/*}*/
-
-/*.group table {*/
-/*    width: 100%;*/
-/*    padding: 8px;*/
-/*    font-size: 14px;*/
-/*    border: 1px solid #ccc;*/
-/*    border-radius: 4px;*/
-/*}*/
-
-/*.btn {*/
-/*    padding: 12px 24px;*/
-/*    margin-left: 13px;*/
-/*    font-size: 16px;*/
-/*    border: none;*/
-/*    border-radius: 4px;*/
-/*    background-color: #333;*/
-/*    color: #fff;*/
-/*    text-transform: uppercase;*/
-/*    transition: background-color 0.2s ease-in-out;*/
-/*    cursor: pointer*/
-/*}*/
-
-/*.btn:hover {*/
-/*    background-color: #ccc;*/
-/*    color: #333;*/
-/*}*/
-/*.prev-next-div {*/
-/*    display: flex;*/
-/*    justify-content: center;*/
-/*    !*align-items: center;*!*/
-/*    padding-top: 10px;*/
-/*}*/
-
-/*!**/
-/*======최하단 검색 바======*/
-/**!*/
-/*#bottom-search-bar {*/
-/*    display: flex;*/
-/*    justify-content: center;*/
-/*    padding-top: 20px;*/
-/*    padding-bottom: 50px;*/
-/*}*/
+}
 
 
 .reviewTot {

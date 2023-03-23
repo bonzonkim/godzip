@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/admin_write_style.css">
+    <link rel="stylesheet" href="css/file_form_style.css">
+    <link rel="stylesheet" href="css/publicTopStyle.css">
+    <link rel="stylesheet" href="css/hoverMenu.css">
+    <link rel="stylesheet" href="css/pageBottomStyle.css">
+    <title>Document</title>
+</head>
+<body>
+<div id="wrap">
+
+
+    <div class="write-board">
+        <div class="write-header">
+            <select class="option">
+                <option value="press">보도자료</option>
+            </select>
+        </div>
+        <form>
+            <div class="write-group">
+
+                <div class="form__group">
+                    <input type="text" class="form__field w-100" placeholder="Input text">
+                    <label  class="form__label"> 제목 </label>
+                </div>
+            </div>
+            <div class="write-group">
+                <textarea name="content" id="content" cols="30" rows="10" style="resize: none"></textarea>
+            </div>
+
+            <form class="file-form"> <!-- 이미지 올리기위해 form태그가 또 필요한지는 모르겠음? -->
+                <label for="file-input" class="drop-container">
+                    <span class="drop-title">Drop files here</span>
+                    or
+                    <input type="file" accept="image/*" id="file-input">
+                </label>
+            </form>
+            <div class="write-group">
+                <input value="등록" type="submit">
+            </div>
+        </form>
+
+    </div>
+
+
+    <!-- 하단 고정 -->
+    <div class="bottom_info"></div>
+    <div id="fixedButton" onclick="TOP();">TOP</div>
+    <div class="footer1">
+        <div class="w companyInfo"><a href="">회사소개</a></div>
+        <div class="line"></div>
+        <div class="w companyLoc"><a href="">회사위치</a></div>
+        <div class="line"></div>
+        <div class="w Press"><a href="">보도자료</a></div>
+        <div class="line"></div>
+        <div class="w Help"><a href="">고객센터</a></div>
+    </div>
+
+
+    <div class="footer2">
+
+        <div class="foot2box1">
+            <img src="img/godzip_white_cropped.png">
+        </div>
+        <div class="line2"></div>
+        <div class="foot2box2">
+            <pre>
+            대표이사: 김본전 간판사인 <br>
+            사업자등록번호: 851-87-00622 <br>
+            주소: (06234) 서울 강남구 테헤란로14길 6 남도빌딩 2층, 3층, 4층 <br>
+            전화번호: 1544-9970 <br>
+            이메일: KHAcademy@gmail.com
+            </pre>
+        </div>
+        <div class="line2"></div>
+        <div class="foot2box3">
+            <pre>
+            이용약관 · 법적고지 <br>
+            개인정보처리방침 <br>
+            청소년보호방침 <br>
+            영상정보처리기기 운영/관리 방침 <br>
+            이메일무단수집거부 <br>
+        </pre>
+        </div>
+    </div>
+    <div class="footer3">
+        Copyright ⓒ GODZIP. All Rights Reserved.
+    </div>
+
+
+
+
+</div>
+
+
+
+</body>
+<script src="js/bottomTopBtn.js"></script>
+</html>
