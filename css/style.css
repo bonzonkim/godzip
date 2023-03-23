@@ -6,7 +6,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 10px;
 }
 .box-group {
     display: none;
@@ -36,7 +35,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 10px;
     /*place-items: center;*/
 }
 .box-group {
@@ -63,10 +61,12 @@
     margin: 10px;
 }
 
+#recentReview {
+
+}
 
 .slider {
     height: 50vh;
-    margin-top: 10px;
 }
 .slider img {
     width: 100%;
@@ -78,12 +78,8 @@
     justify-content: center;
     align-items: center;
 }
-.footer1 {
-    margin-top: 20px;
-}
 
 #show-more-activity {
-
     display: flex;
     justify-content: center;
     align-items: center;

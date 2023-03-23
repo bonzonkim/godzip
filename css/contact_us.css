@@ -15,14 +15,14 @@ body {
   margin: 0;
   padding: 0;
   color: #333;
-
 }
 
 /* Set default margins and paddings for the elements */
 h1, h2, h3, p, ul, ol, li, pre {
   margin: 0;
   padding: 0;
-
+  margin-top: 5%;
+  text-align: center;
 }
 
 .h1{
