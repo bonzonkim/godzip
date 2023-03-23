@@ -1,0 +1,175 @@
+.dashboard {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    background-color: #FCECD3;
+    padding: 1px;
+    text-align: center;
+    margin: 10px auto 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  
+  .dashboard h1:first-child {
+    width: 70%;
+  }
+  
+  .dashboard h1:last-child {
+    width: 30%;
+  }
+
+
+.categoryTOP {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    background-color: #FCECD3;
+    padding: 1px;
+    text-align: center;
+    margin: 10px auto 50px;
+}
+
+.categoryTOP table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .categoryTOP td {
+    width: 25%; /* 각 td 요소의 너비를 동일하게 설정 */
+    border: 1px solid black;
+    padding: 10px;
+    text-align: center; /* 각 카테고리의 텍스트를 중앙에 배치 */
+  }
+
+
+
+
+/* ---------------메인 게시글 부분------------ */
+
+
+
+
+.dashboard-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.dashboardList {
+    flex-basis: calc(25% - 10px);
+    margin-right: 20px;
+    margin-bottom: 30px;
+    box-sizing: border-box;
+}
+
+.dashboardList:last-child {
+    margin-right: 0;
+}
+
+.list {
+    display: grid;
+    grid-template-columns: 5% 5% minmax(25%, 1fr) 10% 10%;
+    grid-gap: 10px;
+    justify-items: center;
+    text-align: center;
+    padding: 8px 0px;
+  }
+
+.dashboardList h5 {
+    margin: 1px 0px;
+}
+
+.dashboardList .li h5 {
+    font-weight: 500;
+}
+
+.list a {
+    align-content: start;
+    text-decoration: none;
+    color: black;
+}
+
+.dashboardList .Top {
+    background-color: #FCECD3;
+    border-top: 2px solid #dedcdc;
+    border-bottom: 2px solid rgb(222, 220, 220);
+}
+
+.dashboardList .li {
+    border-bottom: 1px solid lightgray;
+}
+
+.listButton {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    width: 300px;
+    height: 35px;
+    margin: 25px auto 50px;
+    text-align: center;
+}
+
+.listBox h5 {
+    margin: 7px 0px 2px;
+}
+
+.listnum {
+    border: 1px solid rgb(222, 220, 220);
+}
+
+.listnum a {
+    text-decoration: none;
+    color: black;
+}
+
+.listnum:hover {
+    background-color: rgb(222, 220, 220);
+}
+
+.listButton img {
+    padding-top: 11px;
+    width: 13px;
+    height: 12px;
+}
+
+.dashboardList {
+    position: relative; /* 부모 엘리먼트를 relative로 설정 */
+  }
+
+  #uploadBtn {
+    position: absolute;
+    top: 0;
+    right: 60px;
+    margin-left: 5px;
+    left: auto;
+}
+  
+  #deleteBtn {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-left: -5px;
+  }
+  
+  .dashboardList button {
+    margin: 0;
+  }
+
+
+/* 게시글 아래 페이지 & 검색영역 */
+
+.searchBottom {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0px 10px;
+}
+.searchList select, .searchbot input {
+    border-radius: 4px;
+    border: 1px solid #9E9E9E;
+    color: #686868;
+}
+.searchBottom img {
+    width: 15px;
+    height: 15px;
+    margin: 6.3px -33px;
+}
