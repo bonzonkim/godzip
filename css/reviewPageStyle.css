@@ -21,11 +21,11 @@ form{
   margin-left: 30px;
 }
 
-#totalReviews{
+.totalReviews{
   display: flex;
 }
 
-#totalReviews #totalReviewCount{
+.totalReviews #totalReviewCount{
   margin-top: 5px;
   font-size: 20px;
   font-weight: 800;
@@ -37,18 +37,35 @@ form{
 }
 #reviewDetail {
   display: flex;
+  flex: 1;
+  align-items: center;
+  justify-content: center;
+}
+
+#reviewDetail-division1{
+  margin-right: 10%;
+  margin-top: 20px;
+
 }
 
 #reviewDetail-division2{
   margin-left: 10%;
   margin-top: 20px;
+
 }
-.review-container{
+#review-container{
   padding-top: 20px;
 }
 
 #buttonLine {
   text-align: center;
+}
+.insideBtns a{
+  text-decoration: none;
+  color: black;
+}
+.insideBtns a:visited{
+  color: black;
 }
 
 
@@ -83,7 +100,6 @@ form{
 .review {
   margin-bottom: 10px;
 }
-
 
 
 /*-- 별점 주기 css--*/
@@ -218,4 +234,25 @@ form{
      inset -4px -4px 6px 0 rgba(255,255,255,.2),
      inset 4px 4px 6px 0 rgba(0, 0, 0, .4);
  }
+
+ .review:nth-of-type(n+4) {
+  display: none;
+}
  
+.bar {
+  background-color: #ccc;
+  display: inline-block;
+  height: 10px;
+  position: relative;
+  width: 100px;
+  margin-left: 10px;
+}
+
+.fill {
+  background-color: #FFD700;
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 0;
+}
