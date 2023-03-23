@@ -1,8 +1,9 @@
-body{
-  background: moccasin;
+iframe {
+  box-shadow: none;
 }
 
-form {
+
+.login {
 	width: 400px;
 	margin: 50px auto;
 	padding: 40px;
@@ -11,7 +12,7 @@ form {
 	box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.2);
 }
 
-h1 {
+#login {
 	margin-bottom: 20px;
 	text-align: center;
 	color: #555;
@@ -51,22 +52,7 @@ input[type="submit"]:hover {
 	background: #3e8e41;
 }
 /* Set the info section to be centered and at the bottom */
-#bottom-info {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-column-gap: 10px; /* Set the size of the gap between the grid columns */
-  background-color: moccasin;
-  position: fixed;
-  bottom: 0;
-  width: 100%;
-}
-.category {
-  display: none;
-  position: absolute;
-  background-color: white;
-  border: 1px solid black;
-  padding: 10px;
-}
+
 #loginDiv {
   display: flex;
   justify-content: flex-end;
@@ -85,6 +71,10 @@ input[type="submit"]:hover {
   box-sizing: border-box;
   margin-bottom: 10px;
 }
+#button1:hover {
+	background: #bb4030;
+}
+
 #button2{
   padding: 8px 10px;
   width: 100%;
@@ -93,6 +83,11 @@ input[type="submit"]:hover {
   box-sizing: border-box;
   margin-bottom: 10px;
 }
+
+#button2:hover {
+	background: #1aab01;
+}
+
 #button3{
   padding: 8px 10px;
   width: 100%;
@@ -100,6 +95,10 @@ input[type="submit"]:hover {
   border-radius: 4px;
   box-sizing: border-box;
   margin-bottom: 10px;
+}
+
+#button3:hover {
+	background: #e2d300;
 }
 
 .google-button {
