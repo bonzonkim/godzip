@@ -1,0 +1,346 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/myPost_comment-style.css">
+    <link rel="stylesheet" href="css/pageBottomStyle.css">
+    <link rel="stylesheet" href="css/publicTopStyle.css">
+    <link rel="stylesheet" href="css/hoverMenu.css">
+
+    <title>myPost_comment</title>
+</head>
+<body>
+<div id="wrap">
+
+    <div id="childTopDiv">
+        <div id="toptopBox">
+            <a href="index.html">
+                <img id="mainLogo" src="img/godzip_white_cropped.png" alt="로고">
+            </a>
+            <div id="searchbarBox">
+                <input type="text" name="searchBar" placeholder="검색어"><input type="button" class="searchButton" name="search" value="SEARCH">
+            </div>
+            <div id="loginOutBox">
+                <input type="button" class="searchButton" name="login" value="LogIn" onclick="location.href='login.html'">
+                <input type="button" class="searchButton" name="logout" value="LogOut">
+            </div>
+        </div>
+
+        <!-- Attached by Hoon (03.13)-->
+        <br>
+        <div id="parent" style="display: flex;">
+            <div class="child" style="flex: 1; position: relative;">
+                <a href="categoryCar.html"><h2>Car</h2></a>
+                <div class="hidden" style="display: none; position: absolute;">
+                    <p><a href="reviewsForAnItem.html">Carwash</a></p>
+                    <p><a href="reviewsForAnItem.html">Component</a></p>
+                    <p><a href="reviewsForAnItem.html">Exterior</a></p>
+                    <p><a href="reviewsForAnItem.html">Interior</a></p>
+                </div>
+            </div>
+            <div class="child" style="flex: 1; position: relative;">
+                <a href="categoryDigital.html"><h2>Digital</h2></a>
+                <div class="hidden" style="display: none; position: absolute;">
+                    <p><a href="reviewsForAnItem.html">Appliances</a></p>
+                    <p><a href="reviewsForAnItem.html">Computer</a></p>
+                    <p><a href="reviewsForAnItem.html">Gadget</a></p>
+                    <p><a href="reviewsForAnItem.html">Iot</a></p>
+                    <p><a href="reviewsForAnItem.html">Mobile</a></p>
+                    <p><a href="reviewsForAnItem.html">Wearable</a></p>
+                </div>
+            </div>
+            <div class="child" style="flex: 1; position: relative;">
+                <a href="categoryfashion.html"><h2>Fashion</h2></a>
+                <div class="hidden" style="display: none; position: absolute;">
+                    <p><a href="reviewsForAnItem.html">Female</a></p>
+                    <p><a href="reviewsForAnItem.html">Male</a></p>
+                    <p><a href="reviewsForAnItem.html">Unisex</a></p>
+                    <p><a href="reviewsForAnItem.html">Children</a></p>
+                </div>
+            </div>
+            <div class="child" style="flex: 1; position: relative;">
+                <a href="categoryHome.html"><h2>Home</h2></a>
+                <div class="hidden" style="display: none; position: absolute;">
+                    <p><a href="reviewsForAnItem.html">Furniture</a></p>
+                    <p><a href="reviewsForAnItem.html">Organize</a></p>
+                    <p><a href="reviewsForAnItem.html">Bedding</a></p>
+                    <p><a href="reviewsForAnItem.html">Light</a></p>
+                    <p><a href="reviewsForAnItem.html">Bathroom</a></p>
+                </div>
+            </div>
+            <div class="child" style="flex: 1; position: relative;">
+                <a href="categorySports.html"><h2>Sports</h2></a>
+                <div class="hidden" style="display: none; position: absolute;">
+                    <p><a href="reviewsForAnItem.html">Cycling</a></p>
+                    <p><a href="reviewsForAnItem.html">Golf</a></p>
+                    <p><a href="reviewsForAnItem.html">Skates</a></p>
+                    <p><a href="reviewsForAnItem.html">Swimming</a></p>
+                    <p><a href="reviewsForAnItem.html">Tennis</a></p>
+                </div>
+            </div>
+            <div class="child" style="flex: 1; position: relative;">
+                <a href="categoryToy.html"><h2>Toy</h2></a>
+                <div class="hidden" style="display: none; position: absolute;">
+                    <p><a href="reviewsForAnItem.html">Block</a></p>
+                    <p><a href="reviewsForAnItem.html">Doll</a></p>
+                    <p><a href="reviewsForAnItem.html">Figure</a></p>
+                    <p><a href="reviewsForAnItem.html">game</a></p>
+                    <p><a href="reviewsForAnItem.html">Puzzle</a></p>
+                    <p><a href="reviewsForAnItem.html">Robot</a></p>
+                </div>
+            </div>
+
+        </div><!-- id: parent -->
+    </div><!-- id: childTopDiv -->
+
+
+
+    <div id="preface">
+        <div id="customer-center-text">
+            <h1>나의글</h1>
+        </div>
+    </div>
+
+    <div id="front-board">
+    <div class="board-header">
+        <div class="text-header">  
+            <a href="myPost_post.html">
+                <div class="faq-qna-notice" id="post">
+                    <h4>POST</h4>
+                </div>
+            </a> 
+            <a href="myPost_comment.html">
+                <div class="faq-qna-notice" id="comment">
+                    <h4>COMMENT</h4>
+                </div>
+            </a>
+            <a href="myPost_report.html">
+                <div class="faq-qna-notice" id="report">
+                    <h4>REPORT</h4>
+                </div>
+            </a>
+        </div>
+    </div>
+    </div>
+    <br>
+    <div class="reviewTot">
+        <div class="reviewList">
+            <div class="list Top">
+                <div class="reviewNum tnum"><h5>NO</h5></div>
+                <div class="reviewTitle ttitle"><h5>COMMENT</h5></div>
+                <div class="reviewLike tlike"><h5>LIKE</h5></div>
+                <div class="reviewUnlike tunlike"><h5>UNLIKE</h5></div>
+                <div class="reviewDate tdate"><h5>DATE</h5></div>
+            </div>
+            <div class="list li l20">
+                <div class="reviewNum num n20"><h5>20</h5></div>
+                <div id="reviewTitle title t20"><a href=""><h5>굳굳</h5></a></div>
+                <div class="reviewLike like"><h5>35</h5></div>
+                <div class="reviewUnlike unlike"><h5>3</h5></div>
+                <div class="reviewDate date d20"><h5>2023.03.17</h5></div>
+            </div>
+            <div class="list li l19">
+                <div class="reviewNum num n19"><h5>19</h5></div>
+                <div id="reviewTitle title t19"><a href=""><h5></h5></a></div>
+                <div class="reviewLike like"><h5></h5></div>
+                <div class="reviewUnlike unlike"><h5></h5></div>
+                <div class="reviewDate date d19"><h5>2023.03.17</h5></div>
+            </div>
+            <div class="list li l18">
+                <div class="reviewNum num n18"><h5>18</h5></div>
+                <div id="reviewTitle title t18"><a href=""><h5></h5></a></div>
+                <div class="reviewLike like"><h5></h5></div>
+                <div class="reviewUnlike unlike"><h5></h5></div>
+                <div class="reviewDate date d18"><h5></h5></div>
+            </div>
+            <div class="list li l17">
+                <div class="reviewNum num n17"><h5>17</h5></div>
+                <div id="reviewTitle title t17"><a href=""><h5></h5></a></div>
+                <div class="reviewLike like"><h5></h5></div>
+                <div class="reviewUnlike unlike"><h5></h5></div>
+                <div class="reviewDate date d17"><h5></h5></div>
+            </div>
+            <div class="list li l16">
+                <div class="reviewNum num n16"><h5>16</h5></div>
+                <div id="reviewTitle title t16"><a href=""><h5></h5></a></div>
+                <div class="reviewLike like"><h5></h5></div>
+                <div class="reviewUnlike unlike"><h5></h5></div>
+                <div class="reviewDate date d16"><h5></h5></div>
+            </div>
+            <div class="list li l15">
+                <div class="reviewNum num n15"><h5>15</h5></div>
+                <div id="reviewTitle title t15"><a href=""><h5></h5></a></div>
+                <div class="reviewLike like"><h5></h5></div>
+                <div class="reviewUnlike unlike"><h5></h5></div>
+                <div class="reviewDate date d15"><h5></h5></div>
+            </div>
+            <div class="list li l14">
+                <div class="reviewNum num n14"><h5>14</h5></div>
+                <div id="reviewTitle title t14"><a href=""><h5></h5></a></div>
+                <div class="reviewLike like"><h5></h5></div>
+                <div class="reviewUnlike unlike"><h5></h5></div>
+                <div class="reviewDate date d14"><h5></h5></div>
+            </div>
+            <div class="list li l13">
+                <div class="reviewNum num n13"><h5>13</h5></div>
+                <div id="reviewTitle title t13"><a href=""><h5></h5></a></div>
+                <div class="reviewLike like"><h5></h5></div>
+                <div class="reviewUnlike unlike"><h5></h5></div>
+                <div class="reviewDate date d13"><h5></h5></div>
+            </div>
+            <div class="list li l12">
+                <div class="reviewNum num n12"><h5>12</h5></div>
+                <div id="reviewTitle title t12"><a href=""><h5></h5></a></div>
+                <div class="reviewLike like"><h5></h5></div>
+                <div class="reviewUnlike unlike"><h5></h5></div>
+                <div class="reviewDate date d12"><h5></h5></div>
+            </div>
+            <div class="list li l11">
+                <div class="reviewNum num n11"><h5>11</h5></div>
+                <div id="reviewTitle title t11"><a href=""><h5></h5></a></div>
+                <div class="reviewLike like"><h5></h5></div>
+                <div class="reviewUnlike unlike"><h5></h5></div>
+                <div class="reviewDate date d11"><h5></h5></div>
+            </div>
+            <div class="list li l10">
+                <div class="reviewNum num n10"><h5>10</h5></div>
+                <div id="reviewTitle title t10"><a href=""><h5></h5></a></div>
+                <div class="reviewLike like"><h5></h5></div>
+                <div class="reviewUnlike unlike"><h5></h5></div>
+                <div class="reviewDate date d10"><h5></h5></div>
+            </div>
+            <div class="list li l9">
+                <div class="reviewNum num n9"><h5>9</h5></div>
+                <div id="reviewTitle title t9"><a href=""><h5></h5></a></div>
+                <div class="reviewLike like"><h5></h5></div>
+                <div class="reviewUnlike unlike"><h5></h5></div>
+                <div class="reviewDate date d9"><h5></h5></div>
+            </div>
+            <div class="list li l8">
+                <div class="reviewNum num n8"><h5>8</h5></div>
+                <div id="reviewTitle title t8"><a href=""><h5></h5></a></div>
+                <div class="reviewLike like"><h5></h5></div>
+                <div class="reviewUnlike unlike"><h5></h5></div>
+                <div class="reviewDate date d8"><h5></h5></div>
+            </div>
+            <div class="list li l7">
+                <div class="reviewNum num n7"><h5>7</h5></div>
+                <div id="reviewTitle title t7"><a href=""><h5></h5></a></div>
+                <div class="reviewLike like"><h5></h5></div>
+                <div class="reviewUnlike unlike"><h5></h5></div>
+                <div class="reviewDate date d7"><h5></h5></div>
+            </div>
+            <div class="list li l6">
+                <div class="reviewNum num n6"><h5>6</h5></div>
+                <div id="reviewTitle title t6"><a href=""><h5></h5></a></div>
+                <div class="reviewLike like"><h5></h5></div>
+                <div class="reviewUnlike unlike"><h5></h5></div>
+                <div class="reviewDate date d6"><h5></h5></div>
+            </div>
+            <div class="list li l5">
+                <div class="reviewNum num n5"><h5>5</h5></div>
+                <div id="reviewTitle title t5"><a href=""><h5></h5></a></div>
+                <div class="reviewLike like"><h5></h5></div>
+                <div class="reviewUnlike unlike"><h5></h5></div>
+                <div class="reviewDate date d5"><h5></h5></div>
+            </div>
+            <div class="list li l4">
+                <div class="reviewNum num n4"><h5>4</h5></div>
+                <div id="reviewTitle title t4"><a href=""><h5></h5></a></div>
+                <div class="reviewLike like"><h5></h5></div>
+                <div class="reviewUnlike unlike"><h5></h5></div>
+                <div class="reviewDate date d4"><h5></h5></div>
+            </div>
+            <div class="list li l3">
+                <div class="reviewNum num n3"><h5>3</h5></div>
+                <div id="reviewTitle title t3"><a href=""><h5></h5></a></div>
+                <div class="reviewLike like"><h5></h5></div>
+                <div class="reviewUnlike unlike"><h5></h5></div>
+                <div class="reviewDate date d3"><h5></h5></div>
+            </div>
+            <div class="list li l2">
+                <div class="reviewNum num n2"><h5>2</h5></div>
+                <div id="reviewTitle title t2"><a href=""><h5></h5></a></div>
+                <div class="reviewLike like"><h5></h5></div>
+                <div class="reviewUnlike unlike"><h5></h5></div>
+                <div class="reviewDate date d2"><h5></h5></div>
+            </div>
+            <div class="list li l1">
+                <div class="reviewNum num n1"><h5>1</h5></div>
+                <div id="reviewTitle title t1"><a href=""><h5></h5></a></div>
+                <div class="reviewLike like"><h5></h5></div>
+                <div class="reviewUnlike unlike"><h5></h5></div>
+                <div class="reviewDate date d1"><h5></h5></div>
+            </div>
+        </div>
+    
+        <div class="listBox">
+            <div class="listButton">
+                <div class="listnum leftButton"><a href=""><img src="img/lessthan.png"></a></div>
+                <div class="listnum list1"><a href=""><h5>1</h5></a></div>
+                <div class="listnum list2"><a href=""><h5>2</h5></a></div>
+                <div class="listnum list3"><a href=""><h5>3</h5></a></div>
+                <div class="listnum list4"><a href=""><h5>4</h5></a></div>
+                <div class="listnum list5"><a href=""><h5>5</h5></a></div>
+                <div class="listnum rightButton"><a href=""><img src="img/greaterthan_thick.png"></a></div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <!-- 하단 고정 -->
+    <div class="bottom_info"></div>
+    <div id="fixedButton" onclick="TOP();">TOP</div>
+    <div class="footer1">
+        <div class="w companyInfo"><a href="">회사소개</a></div>
+        <div class="line"></div>
+        <div class="w companyLoc"><a href="">회사위치</a></div>
+        <div class="line"></div>
+        <div class="w Press"><a href="">보도자료</a></div>
+        <div class="line"></div>
+        <div class="w Help"><a href="">고객센터</a></div>
+    </div>
+
+
+    <div class="footer2">
+
+        <div class="foot2box1">
+            <img src="img/godzip_white_cropped.png">
+        </div>
+        <div class="line2"></div>
+        <div class="foot2box2">
+            <pre>
+            대표이사: 김본전 간판사인 <br>
+            사업자등록번호: 851-87-00622 <br>
+            주소: (06234) 서울 강남구 테헤란로14길 6 남도빌딩 2층, 3층, 4층 <br>
+            전화번호: 1544-9970 <br>
+            이메일: KHAcademy@gmail.com
+            </pre>
+        </div>
+        <div class="line2"></div>
+        <div class="foot2box3">
+            <pre>
+            이용약관 · 법적고지 <br>
+            개인정보처리방침 <br>
+            청소년보호방침 <br>
+            영상정보처리기기 운영/관리 방침 <br>
+            이메일무단수집거부 <br>
+        </pre>
+        </div>
+    </div>
+    <div class="footer3">
+        Copyright ⓒ GODZIP. All Rights Reserved.
+    </div>
+
+</div>
+
+
+</body>
+<script src="js/bottomTopBtn.js"></script>
+<script src="js/topHoverMenu.js"></script>
+</html>
