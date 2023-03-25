@@ -37,6 +37,7 @@
     // 신고 폼 제출 시 창을 닫음
     reportWindow.document.getElementById("report-form").addEventListener("submit", function(event) {
       event.preventDefault(); // 폼 제출 기본 동작 취소
+      reportWindow.alert("신고가 완료되었습니다.");
       reportWindow.close(); // 창 닫기
     });
   });

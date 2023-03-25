@@ -82,6 +82,21 @@ h6 {
     margin-top: 10px;
   }
 
+  .image-wrapper {
+    position: relative;
+    width: 50%; /* 부모 요소의 너비를 지정 */
+    height: 0; /* 높이를 0으로 설정 */
+    padding-bottom: 30%; /* 높이를 너비의 30%로 설정 */
+  }
+  
+  .image-wrapper img {
+    position: absolute;
+    max-width: 100%; /* 이미지의 최대 너비를 100%로 설정 */
+    max-height: 100%; /* 이미지의 최대 높이를 100%로 설정 */
+    bottom: 0; /* 하단에 고정 */
+    right: 0; /* 우측에 고정 */
+  }
+
 
   .report-center {
     display: flex;

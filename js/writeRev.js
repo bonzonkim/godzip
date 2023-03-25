@@ -72,11 +72,21 @@ category1.addEventListener('change', () => {
       break;
   }
 
+  // 이벤트 핸들러의 인자로 event를 추가했습니다.
+  // event.preventDefault()를 호출해서 폼 제출 이벤트를 막습니다.
+  // window.location.href를 변경해서 reviewsForAnItem.html 페이지로 이동합니다. 
+  // 상대 경로(./)를 사용하여 현재 페이지와 같은 디렉토리에 있는 파일에 접근할 수 있습니다.
+  // 이벤트 핸들러에서 submitButton.removeEventListener('click', submitHandler)을 호출하여 이벤트 핸들러를 삭제합니다. 
+  // 이는 필요한 경우에만 사용하세요.
   const submitButton = document.querySelector('button[type="submit"]');
-  submitButton.addEventListener('click', () => {
-    alert('제출이 완료되었습니다!');
-  });
-
+const submitHandler = (event) => {
+  event.preventDefault();
+  alert('제출이 완료되었습니다!');
+  window.location.href = './reviewsForAnItem.html';
+  submitButton.removeEventListener('click', submitHandler);
+};
+submitButton.addEventListener('click', submitHandler);
+  
   // 카테고리2의 옵션을 업데이트
   category2.innerHTML = category2Options.map(option => `<option value="${option.value}">${option.text}</option>`).join('');
 });
