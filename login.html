@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="google-signin-client_id" content="486961560488-27epnb7rh697gknt75m2p8qn0aenp2do.apps.googleusercontent.com.com.apps.googleusercontent.com">
+  <title>로그인페이지</title>
+  
+  
+  <link rel="stylesheet" href="/css/login.css">
+  <link rel="stylesheet" href="/css/hoverMenu.css">
+
+</head>
+<body>
+  <iframe src="/common_HTML/publicTopStyle.html" width="100%" height="80vh" frameborder=0 framespacing=0 marginheight=0 marginwidth=0 scrolling=no vspace=0></iframe>
+  
+
+  <div id="parent" style="display: flex;">
+    <div class="child" style="flex: 1; position: relative;">
+        <h2>Fashion</h2>
+        <div class="hidden" style="display: none; position: absolute;">
+            <p><a href="#">Men</a></p>
+            <p><a href="#">Women</a></p>
+            <p><a href="#">Children</a></p>
+            <p><a href="#">Unisex</a></p>
+            <p><a href="#">Accesaries</a></p>
+        </div>
+    </div>
+    <div class="child" style="flex: 1; position: relative;">
+        <h2>Interior</h2>
+        <div class="hidden" style="display: none; position: absolute;">
+            <p><a href="#">Furniture</a></p>
+            <p><a href="#">Curtains</a></p>
+            <p><a href="#">Tool kits</a></p>
+            <p><a href="#">Displays</a></p>
+            <p><a href="#">etc..</a></p>
+        </div>
+    </div>
+    <div class="child" style="flex: 1; position: relative;">
+        <h2>Sports</h2>
+        <div class="hidden" style="display: none; position: absolute;">
+            <p><a href="#">Baseball</a></p>
+            <p><a href="#">Soccer</a></p>
+            <p><a href="#">Basketball</a></p>
+            <p><a href="#">Golf</a></p>
+            <p><a href="#">Bycicle</a></p>
+        </div>
+    </div>
+    <div class="child" style="flex: 1; position: relative;">
+        <h2>Toy</h2>
+        <div class="hidden" style="display: none; position: absolute;">
+            <p><a href="#">Adult</a></p>
+            <p><a href="#">Under 13years</a></p>
+            <p><a href="#">Under 8years</a></p>
+            <p><a href="#">Under 5years</a></p>
+            <p><a href="#">Baby</a></p>
+        </div>
+    </div>
+    <div class="child" style="flex: 1; position: relative;">
+        <h2>Car</h2>
+        <div class="hidden" style="display: none; position: absolute;">
+            <p><a href="#">Hidden content</a></p>
+            <p><a href="#">Hidden content</a></p>
+            <p><a href="#">Hidden content</a></p>
+            <p><a href="#">Hidden content</a></p>
+            <p><a href="#">Hidden content</a></p>
+        </div>
+    </div>
+    <div class="child" style="flex: 1; position: relative;">
+        <h2>Electronics</h2>
+        <div class="hidden" style="display: none; position: absolute;">
+            <p><a href="#">Hidden content</a></p>
+            <p><a href="#">Hidden content</a></p>
+            <p><a href="#">Hidden content</a></p>
+            <p><a href="#">Hidden content</a></p>
+            <p><a href="#">Hidden content</a></p>
+        </div>
+    </div>
+
+</div><!-- id: parent -->
+
+	<form class="login">
+      <h1 id="login">로그인</h1>
+      <label for="username">아이디:</label>
+      <input type="text" id="username" name="username" required>
+      
+      <label for="password">비밀번호:</label>
+      <input type="password" id="password" name="password" required>
+      
+      <a onclick="saveLogin()">계정정보 저장하기</a>
+      <input type="checkbox" id="remember-me" name="remember-me">
+      <input type="submit" value="Login">
+      
+      <div class="button-container">
+        <button id="button1" class="google-button" onclick="window.location.href ='https://accounts.google.com/o/oauth2/auth?' +
+        'client_id={486961560488-27epnb7rh697gknt75m2p8qn0aenp2do.apps.googleusercontent.com}&'+
+        'redirect_uri={http://127.0.0.1:5500/login.html}&'+
+        'response_type=token&'+
+        'scope=https://www.googleapis.com/auth/userinfo.email https://www.googleapis.com/auth/userinfo.profile';">Login with Google</button>
+        <button id="button2" class="naver-button">Login with Naver</button>
+        <button id="button3" class="kakao-button">Login with KakaoTalk</button>
+      </div>
+
+    </form>
+
+    <iframe src="/common_HTML/pageBottomStyle.html" width="100%" height="250vh" frameborder=0 framespacing=0 marginheight=0 marginwidth=0 scrolling=no vspace=0></iframe>
+
+    <script src="/js/topHoverMenu.js"></script>
+    <script src="/js/login.js"></script>
+
+
+
+
+    <script>
+      const parsedHash = new URLSearchParams(window.location.hash.substring(1));
+const accessToken = parsedHash.get("access_token");
+
+const { data } = await Api.post("oauth/google", { accessToken });
+    </script>
+
+    <script>
+      const { accessToken } = req.body;
+
+const { data } = await axios.get(
+            `https://www.googleapis.com/oauth2/v1/userinfo?access_token=${accessToken}`
+        );
+
+    </script>
+
+
+    <script src="https://static.nid.naver.com/js/naveridlogin_js_sdk_2.0.2.js" charset="utf-8"></script>
+
+
+
+
+    
+  
+</body>
+</html>
