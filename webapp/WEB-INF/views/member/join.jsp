@@ -10,10 +10,10 @@
 <head>
 <meta charset="UTF-8">
 <title>Insert title here</title>
-	<link rel="stylesheet" href="/resources/css/member/joinStyle.css">
-	  <script defer src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-	  <script type="text/javascript" defer src="/resources/js/joinscript.js">
-	  </script>
+   <link rel="stylesheet" href="/resources/css/member/joinStyle.css">
+     <script defer src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+     <script type="text/javascript" defer src="/resources/js/joinscript.js">
+     </script>
    </head>
 
 <body>
@@ -29,7 +29,7 @@
             </tr>
             <tr id= "imgInTable">
             <td>
-			<img alt="로고사진" src="/resources/img/godzip_white_cropped.PNG" width="200px;" style="margin-left:80%;">
+         <img alt="로고사진" src="/resources/img/godzip_white_cropped.PNG" width="200px;" style="margin-left:80%;">
             </td>
             </tr>
             <tr>
@@ -72,7 +72,7 @@
             </tr>
             <tr>
             <td>
-         	<select name="countryCode">
+            <select name="countryCode">
                 <option value="+82">대한민국 (+82)</option>
                 <option value="+1">미국 (+1)</option>
                 <option value="+81">일본 (+81)</option>
@@ -143,21 +143,21 @@
             <td>국적/nation</td>
             <td>
                 <select name="nationality">
-				<%
-				   Connection conn = JDBCTemplate.getConnection();
-				    PreparedStatement pstmt = conn.prepareStatement("SELECT NO,NAME_KR, NAME_EN FROM NATIONS");
-				    ResultSet rs = pstmt.executeQuery();
-				    while (rs.next()) {
-				        String no = rs.getString("NO");
-				        String nameKr = rs.getString("NAME_KR");
-				        String nameEn = rs.getString("NAME_EN");
-				        out.println("<option value='" + no + "'>"+nameKr+" " +nameEn + "</option>");
-				    }
-				    rs.close();
-				    pstmt.close();
-				    conn.close();
-				%>
-				</select>
+            <%
+               Connection conn = JDBCTemplate.getConnection();
+                PreparedStatement pstmt = conn.prepareStatement("SELECT NO,NAME_KR, NAME_EN FROM NATIONS");
+                ResultSet rs = pstmt.executeQuery();
+                while (rs.next()) {
+                    String no = rs.getString("NO");
+                    String nameKr = rs.getString("NAME_KR");
+                    String nameEn = rs.getString("NAME_EN");
+                    out.println("<option value='" + no + "'>"+nameKr+" " +nameEn + "</option>");
+                }
+                rs.close();
+                pstmt.close();
+                conn.close();
+            %>
+            </select>
             </td>
             </tr>
             <tr>
@@ -194,7 +194,7 @@
 </div>
 
 <!--common footer  -->
-		<%@ include file="/WEB-INF/views/common/footer.jsp"%>
+      <%@ include file="/WEB-INF/views/common/footer.jsp"%>
 
 </div> <!--wrap-->
 

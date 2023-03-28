@@ -52,6 +52,16 @@ public class MemberLoginController extends HttpServlet {
 			
 		}
 		
+//		if(loginMember != null) {
+//		    req.getSession().setAttribute("loginMember", loginMember);
+//		    req.getSession().setAttribute("loginNick", loginMember.getNick()); // 추가
+//		    resp.sendRedirect("/");
+//		} else {
+//		    req.getSession().setAttribute("alertMsg", "로그인실패!! 아이디와 비밀번호를 확인하세요.");
+//		    resp.sendRedirect("/");
+//		}
+
+		
 	}
 	
 }

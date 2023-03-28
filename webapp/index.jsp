@@ -19,9 +19,9 @@
 
         <!-- 배너 슬라이드 -->
         <div class="slider">
-            <a href="board/list"><img src="/resources/img/sport.jpg"></a>
-            <a href="board/list"><img src="/resources/img/Interior.jpg"></a>
-            <a href="board/list"><img src="/resources/img/toy.jpg"></a>
+            <img src="/resources/img/sport.jpg">
+            <img src="/resources/img/Interior.jpg">
+            <img src="/resources/img/toy.jpg">
         </div>
 
 <!-- 리뷰 넘기기 -->

@@ -47,7 +47,7 @@
         </div>
         <semi:if test="${loginMember != null}">
 	        <div class="welcome">
-	            <h5>"${loginInfo.nick}"님 환영합니다.</h5>
+	            <h5>"${loginMember.nick}"님 환영합니다.</h5>
 	        </div>
         </semi:if>
         <!-- Attached by Hoon (03.13)-->

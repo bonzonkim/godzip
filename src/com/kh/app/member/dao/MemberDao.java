@@ -29,7 +29,7 @@ public class MemberDao {
 	        memberInfoNo = rs.getInt(1);
 	    }
 
-	    String sql2 = "INSERT INTO SPECIAL_INFO(NO, WEIGHT, HEIGHT, NATION_NO) " +
+	    String sql2 = "INSERT INTO SPECIAL_INFO(NO, WEIGHT, HEIGHT, NATIONS_NO) " +
 	                  "SELECT MI.NO, ?, ?, ? " +
 	                  "FROM MEMBER_INFO MI " +
 	                  "WHERE MI.NO = ?";

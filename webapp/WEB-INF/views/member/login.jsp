@@ -16,10 +16,10 @@
     <form class="login" action="/member/login" method="post">
         <h1 id="login">로그인</h1>
         <label for="username">아이디:</label>
-        <input type="text" id="username" name="username" required>
+        <input type="text" id="memberId" name="memberId" required>
         
         <label for="password">비밀번호:</label>
-        <input type="password" id="password" name="password" required>
+        <input type="password" id="memberPwd" name="memberPwd" required>
         
         <a onclick="saveLogin()">계정정보 저장하기</a>
         <input type="checkbox" id="remember-me" name="remember-me">
