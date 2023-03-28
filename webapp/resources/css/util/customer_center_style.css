@@ -1,0 +1,234 @@
+/*
+=====고객센터 텍스트=====
+*/
+
+#preface {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#customer-center-text {
+    display: flex;
+    justify-content: left;
+    align-items: start;
+    background-color: #FCECD3;
+}
+
+/*
+화면 레이아웃 잡아주는 div front-board
+*/
+#front-board {
+        padding-left: 25em;
+        padding-right: 25em;
+}
+/*
+
+==============게시글 테이블=============
+
+*/
+#customer-service {
+    display: flex;
+    justify-content: left;
+    align-items: start;
+}
+.title-kind {
+    display: grid;
+    grid-template-columns: 3fr 3fr 3fr;
+    place-items: center;
+}
+
+.faq-qna-notice {
+    padding: 5px 20px;
+}
+
+/*table {*/
+/*    border-collapse: collapse;*/
+/*    width: 100%;*/
+/*}*/
+/*th, td {*/
+/*    border-bottom: 1px solid #ddd;*/
+/*    text-align: left;*/
+/*    padding: 8px;*/
+/*}*/
+/*tr:nth-child(even) {*/
+/*    background-color: #f2f2f2;*/
+/*}*/
+/*.outer-board {*/
+/*    display: flex;*/
+/*    justify-content: center;*/
+/*    align-items: center;*/
+/*}*/
+/*.board {*/
+/*    width: 800px;*/
+/*    height: 800px;*/
+/*    border: 1px solid #ccc;*/
+/*    border-radius: 4px;*/
+/*    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);*/
+/*    overflow: hidden;*/
+/*    margin: 10px;*/
+/*}*/
+
+/*.board-header {*/
+/*    background-color: #333;*/
+/*    text-align: center;*/
+/*    border-radius: 15px;*/
+/*}*/
+
+/*.board-header .text-header {*/
+/*    margin: 0;*/
+/*    font-size: 18px;*/
+/*    color: rgb(255, 255, 255);*/
+/*}*/
+
+/*.board-body {*/
+/*    padding: 16px;*/
+
+/*}*/
+
+/*.group {*/
+/*    margin-bottom: 10px;*/
+/*}*/
+
+/*.group label {*/
+/*    display: block;*/
+/*    font-size: 14px;*/
+/*    color: #333;*/
+/*    font-weight: bold;*/
+/*    margin-bottom: 1px;*/
+/*}*/
+
+/*.group table {*/
+/*    width: 100%;*/
+/*    padding: 8px;*/
+/*    font-size: 14px;*/
+/*    border: 1px solid #ccc;*/
+/*    border-radius: 4px;*/
+/*}*/
+
+/*.btn {*/
+/*    padding: 12px 24px;*/
+/*    margin-left: 13px;*/
+/*    font-size: 16px;*/
+/*    border: none;*/
+/*    border-radius: 4px;*/
+/*    background-color: #333;*/
+/*    color: #fff;*/
+/*    text-transform: uppercase;*/
+/*    transition: background-color 0.2s ease-in-out;*/
+/*    cursor: pointer*/
+/*}*/
+
+/*.btn:hover {*/
+/*    background-color: #ccc;*/
+/*    color: #333;*/
+/*}*/
+/*.prev-next-div {*/
+/*    display: flex;*/
+/*    justify-content: center;*/
+/*    !*align-items: center;*!*/
+/*    padding-top: 10px;*/
+/*}*/
+
+/*!**/
+/*======최하단 검색 바======*/
+/**!*/
+/*#bottom-search-bar {*/
+/*    display: flex;*/
+/*    justify-content: center;*/
+/*    padding-top: 20px;*/
+/*    padding-bottom: 50px;*/
+/*}*/
+
+
+.reviewTot {
+    margin: auto;
+    width: 700px;
+}
+.review {
+    text-align: center;
+    margin: 50px auto;
+}
+#manageButton {
+    display: flex;
+    justify-content: right;
+    margin: 10px 0px;
+    gap: 0px 5px;
+}
+#manageButton button {
+    border: 1px solid rgb(222, 220, 220);
+    background-color: rgb(222, 220, 220);
+    width: 65px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+.list {
+    display: grid;
+    /* grid-template-rows: repeat(11,0.1fr); */
+    grid-template-columns: 0.8fr 1fr 10fr 2fr 3fr;
+    text-align: center;
+    padding: 8px 0px;
+}
+.reviewList h5 {
+    margin: 1px 0px;
+}
+.reviewList .li h5 {
+    font-weight: 500;
+}
+.list a {
+    align-content: start;
+    text-decoration: none;
+    color: black;
+}
+.reviewList .Top {
+    background-color: #FCECD3;
+    border-top: 2px solid rgb(222, 220, 220);
+    border-bottom: 2px solid rgb(222, 220, 220);
+}
+.reviewList .li {
+    border-bottom: 1px solid lightgray;
+}
+.listButton {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    width: 300px;
+    height: 35px;
+    margin: 25px auto 50px;
+    text-align: center;
+    /* border: 1px solid rgb(222, 220, 220); */
+    /* place-content: center; */
+}
+.listBox h5 {
+    margin: 7px 0px 2px;
+}
+.listnum {
+    border: 1px solid rgb(222, 220, 220);
+}
+.listnum a {
+    text-decoration: none;
+    color: black;
+}
+.listnum:hover {
+    background-color: rgb(222, 220, 220);
+}
+.listButton img {
+    padding-top: 11px;
+    width: 13px;
+    height: 12px;
+}
+.searchBottom {
+    display: flex;
+    gap: 0px 10px;
+    margin-bottom: 200px;
+}
+.searchList select, .searchbot input {
+    border-radius: 4px;
+    border: 1px solid #9E9E9E;
+    color: #686868;
+}
+.searchBottom img {
+    width: 15px;
+    height: 15px;
+    margin: 6.3px -33px;
+}
