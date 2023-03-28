@@ -11,6 +11,7 @@ public class BoardVo {
 	private String delete_yn;
 	private String hit;
 	private String category1;
+	private String changeName;
 	
 	public String getNo() {
 		return no;
@@ -60,14 +61,20 @@ public class BoardVo {
 	public void setCategory1(String category1) {
 		this.category1 = category1;
 	}
+	public String getChangeName() {
+        return changeName;
+    }
+	public void setChangeName(String changeName) {
+		this.changeName = changeName;
+	}
 	@Override
 	public String toString() {
 		return "BoardVo [no=" + no + ", title=" + title + ", content=" + content + ", writer=" + writer
 				+ ", enroll_date=" + enroll_date + ", delete_yn=" + delete_yn + ", hit=" + hit + ", category1="
-				+ category1 + "]";
+				+ category1 + ", changeName=" + changeName + "]";
 	}
 	public BoardVo(String no, String title, String content, String writer, String enroll_date, String delete_yn,
-			String hit, String category1) {
+			String hit, String category1, String changeName) {
 		super();
 		this.no = no;
 		this.title = title;
@@ -77,6 +84,7 @@ public class BoardVo {
 		this.delete_yn = delete_yn;
 		this.hit = hit;
 		this.category1 = category1;
+		this.changeName = changeName;
 	}
 	public BoardVo() {
 		super();
