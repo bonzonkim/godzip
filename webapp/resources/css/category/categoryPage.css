@@ -1,0 +1,72 @@
+
+
+/* 카테고리페이지 css */
+.catebox-group {
+    display: none;
+    flex-wrap: wrap;
+    margin: -3px;
+}
+.catebox-group.active {
+    display: flex;
+}
+.catebox {
+    position: relative;
+    width: 70%;
+    height: 250px; /* 이미지와 텍스트 높이를 함께 고려하여 조절 */
+    margin: 5px;
+    flex-basis: calc(50% - 10px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; /* 추가 */
+  }
+
+.category-catediv{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#category-cate, .category-catediv {
+    text-align: center;
+    font-size: 36px;
+  }
+
+  #category-cate, h1 {
+    background-color: #FCECD3;
+    margin-top: 10px;
+  }
+
+.catebox {
+    position: relative;
+    width: 70%;
+    height: 250px;
+    margin: 10px;
+    flex-basis: calc(50% - 20px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 10px; /* 이미지와 글자 사이의 간격 조절 */
+  }
+  
+  .catebox img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+  }
+  
+  .catebox .text {
+    display: inline-block;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    color: black;
+    font-size: 24px;
+    font-weight: bold;
+    /* opacity: 0.8; 투명도 */
+  }
