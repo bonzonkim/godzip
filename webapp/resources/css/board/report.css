@@ -1,0 +1,152 @@
+/* 신고페이지 */
+.report-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+  }
+  
+  .report-title {
+    margin-right: 10px;
+  }
+  
+  .report-icon {
+    width: 30px;
+    height: 30px;
+  }
+
+.title11 {
+    text-align: center;
+}
+
+h6 {
+    opacity: 0.4; /*투명도*/
+}
+
+.report-guidelines {
+    margin: 40px auto;
+    width: 70%;
+    padding: 30px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    overflow: auto;
+    background-color: #FCECD3;
+  }
+
+  .reason1:hover::before {
+    color: red;
+    content: "2주 정지 & 코멘트 삭제 <= ";
+  }
+  .reason2:hover::before {
+    color: red;
+    content: "코멘트 삭제 <= ";
+  }
+  .reason3:hover::before {
+    color: red;
+    content: "계정 영구정지 & 모든 코멘트 삭제 <= ";
+  }
+  .reason4:hover::before {
+    color: red;
+    content: "1주 정지 & 코멘트 삭제 <= ";
+  }
+  .reason5:hover::before {
+    color: red;
+    content: "2주 정지 & 코멘트 삭제 <= ";
+  }
+
+  .report-guidelines .image-wrapper {
+    float: right;
+    margin: 10px;
+  }
+  
+  .report-guidelines h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .report-guidelines ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: disc;
+  }
+  
+  .report-guidelines li {
+    margin-bottom: 5px;
+    
+  }
+
+  .report-warning {
+    text-align: center;
+    font-size: 12px;
+    margin-top: 10px;
+  }
+
+
+  .report-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .rebox {
+    width: 400px;
+    height: 300px;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.2);
+  }
+  
+  .center-box, .report-box{
+    background-color: #FCECD3;
+    color: black;
+    width: 300px;
+    height: 150px;
+  }
+
+  .reportBtn {
+    appearance: none;
+    background-color: transparent;
+    border: 0.125em solid #1A1A1A;
+    border-radius: 0.9375em;
+    box-sizing: border-box;
+    color: #3B3B3B;
+    cursor: pointer;
+    display: inline-block;
+    font-family: Roobert,-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+    font-size: 16px;
+    font-weight: 600;
+    line-height: normal;
+    margin: 0;
+    min-height: 3.75em;
+    min-width: 0;
+    outline: none;
+    padding: 1em 2.3em;
+    text-align: center;
+    text-decoration: none;
+    transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    will-change: transform;
+  }
+
+  .reportBtn:disabled {
+    pointer-events: none;
+   }
+   
+   .reportBtn:hover {
+    color: #fff;
+    background-color: #1A1A1A;
+    box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+    transform: translateY(-2px);
+   }
+   
+   .reportBtn:active {
+    box-shadow: none;
+    transform: translateY(0);
+   }
+  /* 신고페이지 끝*/
+

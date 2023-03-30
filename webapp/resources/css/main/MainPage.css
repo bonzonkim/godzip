@@ -1,0 +1,237 @@
+
+.bestReview {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /*place-items: center;*/
+}
+.recentReview {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+.bestReview h1,
+.recentReview h1 {
+    cursor: pointer;
+}
+  .box-group {
+    display: none;
+  }
+  .box-group.active {
+    display: flex;
+  }
+  .box-group-4 .box {
+    background-color: yellow;
+  }
+  .box-group-5 .box {
+    background-color: black;
+  }
+  .box-group-6 .box {
+    background-color: red;
+  }
+  .box-group-1 .box {
+    background-color: wheat;
+  }
+  .box-group-2 .box {
+    background-color: green;
+  }
+  .box-group-3 .box {
+    background-color: blue;
+  }
+.box {
+    width: 200px;
+    height: 200px;
+    margin: 10px;
+}
+.button {
+    margin: 10px;
+}
+
+
+.slider {
+  height: 100vh;
+  width: 100%;
+
+  position: relative;
+  overflow: hidden;
+}
+
+.slider img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+
+.slider img:first-child {
+  opacity: 1;
+}
+
+.slider .active {
+  opacity: 1;
+}
+
+
+
+/* category start */
+.category-div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box-group-cate .box {
+    background-color: wheat;
+}
+
+.box {
+    position: relative;
+    width: 200px; /* 원하는 크기로 조정 */
+    height: 200px; /* 원하는 크기로 조정 */
+  }
+  
+  .box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .box .text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    opacity: 0.8; /*투명도*/
+  }
+/* category end */
+
+/*혜원*/
+  #fixedButton {
+    position: fixed;
+    right: 45px;
+    width : 60px;
+    height: 60px;
+    display: grid;
+    background-color: gray;
+    color: #fff;
+    font-size: 15px;
+    place-content: center center;
+    cursor: pointer;
+}
+
+#fixedButton:hover {
+    background-color: black;
+}
+.footer1 {
+   display: flex;
+   gap: 0px 20px;
+   background-color: rgb(238, 236, 236);
+   font-size: 10px;
+   height: 40px;
+    border-top: 1px solid lightgray;
+    border-bottom: 1px solid lightgray;
+}
+.w {
+    padding-top: 12px;
+}
+.companyInfo {
+   margin-left: 270px;
+}
+.companyInfo,.companyLoc,.Press,.Help:hover {
+   cursor: pointer;
+}
+.line {
+    border-left: 2px solid lightgray;
+    margin: 12px;
+}
+.foot2box1 {
+    padding-top: 20px;
+}
+.footer2 {
+    display: flex;
+    place-content: center;
+    padding-top: 20px;
+}
+.line2 {
+    border-left: 2px solid lightgray;
+    margin: 25px;
+    margin-right: -50px;
+}
+.footer3 {
+    padding-top: 5px;
+    padding-left: 270px;
+    border-top: 1px solid gray;
+}
+/*혜원 끝*/
+
+/*허훈 시작*/
+#parent{width: 30%;}
+.child{text-align: center;}
+.child h2{font-size: 20px;}
+.child:hover {transition:all .3s ease}
+.child > h2 {position:relative }
+.child > h2::after {
+  content: '';
+  width: 0%;
+  left: 50%;
+  height: 1px;
+  display: block;
+  position: absolute;
+  margin-top: 3px;
+  border-bottom: 2px solid black;
+  transition:all .3s ease;
+}
+.child:hover > h2::after {
+  content: '';
+  width: 100%;
+  left: 0px;
+  height: 1px;
+  display: block;
+  position: absolute;
+  margin-top: 3px;
+  border-bottom: 2px solid black;
+  transition:all .3s ease;
+
+}
+.hidden{ background-color: rgba(206, 197, 166, 0.3); width: 100%; color: black; border-radius: 15px; word-break:break-all;}
+.hidden a:link{color:black; text-decoration: none;}
+.hidden a:visited{color:black; text-decoration: none;}
+.hidden a:hover{color: black; text-decoration: underline; font-size: 110%; font-weight: 550;}
+/* 허훈끝 */
+
+#bottom-info {
+    background: moccasin;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+#about {
+    display: grid;
+    place-items: center;
+}
+#discover {
+    display: grid;
+    place-items: center;
+}
+#some {
+    display: grid;
+    place-items: center;
+}
+#show-more-activity {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#category-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
