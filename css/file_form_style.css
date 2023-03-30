@@ -1,4 +1,5 @@
 .file-form {
+<<<<<<< Updated upstream:css/file_form_style.css
     background-color: #fff;
     box-shadow: 0 10px 60px rgb(218, 229, 255);
     border: 1px solid rgb(159, 159, 160);
@@ -9,6 +10,24 @@
     max-width: 320px;
 }
 
+=======
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  background-color: #fff;
+  box-shadow: 0 10px 60px rgb(218, 229, 255);
+  border: 1px solid rgb(159, 159, 160);
+  border-radius: 20px;
+  padding: 2rem .7rem .7rem .7rem;
+  text-align: center;
+  font-size: 1.125rem;
+  max-width: 500px;
+}
+
+
+>>>>>>> Stashed changes:webapp/resources/css/util/file_form_style.css
 .file-form-title {
     color: #000000;
     font-size: 1.8rem;
@@ -22,6 +41,7 @@
 }
 
 .drop-container {
+<<<<<<< Updated upstream:css/file_form_style.css
     background-color: #fff;
     position: relative;
     display: flex;
@@ -36,6 +56,19 @@
     color: #444;
     cursor: pointer;
     transition: background .2s ease-in-out, border .2s ease-in-out;
+=======
+  margin-top: 2.1875rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  border-radius: 10px;
+  border: 2px dashed rgb(171, 202, 255);
+  color: #444;
+  cursor: pointer;
+  transition: background .2s ease-in-out, border .2s ease-in-out;
+>>>>>>> Stashed changes:webapp/resources/css/util/file_form_style.css
 }
 
 .drop-container:hover {

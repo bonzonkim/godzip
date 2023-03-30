@@ -2,7 +2,11 @@
 =====헤더=====
 */
 
+<<<<<<< Updated upstream:css/admin_write_style.css
 #header {
+=======
+/* #header {
+>>>>>>> Stashed changes:webapp/resources/css/admin/admin_write_style.css
     display: grid;
     grid-template-columns: 1fr 3fr 3fr;
 }
@@ -15,7 +19,11 @@
 .search {
     background: white;
     border-radius: 5px;
+<<<<<<< Updated upstream:css/admin_write_style.css
 }
+=======
+} */
+>>>>>>> Stashed changes:webapp/resources/css/admin/admin_write_style.css
 /*
 =====게시글 작성=====
 */

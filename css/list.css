@@ -1,0 +1,156 @@
+.dashboard {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    background-color: #FCECD3;
+    padding: 1px;
+    text-align: center;
+    margin: 10px auto 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  
+  .dashboard h1:first-child {
+    width: 70%;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  
+
+/* -----------리스트 ------------- */
+
+#table-wrap {
+    margin: 20px auto;
+    width: 80%;
+  }
+  
+  table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  th, td {
+    padding: 10px;
+    text-align: left;
+  }
+  
+  th {
+    background-color: #FCECD3;
+    border-bottom: 2px solid #dedcdc;
+  }
+  
+  tr:hover {
+    background-color: #f5f5f5;
+  }
+  
+  td:first-child {
+    width: 10%;
+  }
+  
+  td:nth-child(2) {
+    width: 50%;
+  }
+  
+  td:nth-child(3) {
+    width: 15%;
+  }
+  
+  td:nth-child(4) {
+    width: 15%;
+  }
+  
+  td:last-child {
+    width: 10%;
+  }
+
+
+
+/* ----------- 하단 부분--------------- */
+#prev-next-btn-wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    }
+    
+    #prev-next-btn-wrap a,
+    #prev-next-btn-wrap span {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    font-weight: 600;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background-color: #fff;
+    color: #333;
+    margin: 0 10px;
+    text-decoration: none;
+    transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+    }
+    
+    #prev-next-btn-wrap a:hover,
+    #prev-next-btn-wrap span:hover {
+    background-color: #333;
+    color: #fff;
+    }
+    
+    #prev-next-btn-wrap a:first-child {
+    margin-left: 0;
+    }
+    
+    #prev-next-btn-wrap a:last-child {
+    margin-right: 0;
+    }
+    
+    #prev-next-btn-wrap span.current {
+    font-weight: 700;
+    }
+
+/* --------하단 부분 끝 */
+
+/* ---------게시글 입력 ---------- */
+
+#button-wrap {
+    text-align: center;
+    margin: 20px 0;
+  }
+  
+  #writeBtn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #fff;
+    background-color: #01579b;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  #writeBtn:hover {
+    background-color: #04326c;
+  }
+  
+  #writeBtn svg {
+    margin-right: 10px;
+    fill: #fff;
+  }
+  
+  #writeBtn .now {
+    font-size: 14px;
+    font-weight: normal;
+  }
+  
+  #writeBtn .play {
+    margin-left: 5px;
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+
