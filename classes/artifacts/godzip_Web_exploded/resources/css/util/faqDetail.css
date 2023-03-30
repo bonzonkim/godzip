@@ -1,0 +1,32 @@
+main{
+	height: 500px;
+	width : 60%;
+	margin : auto;
+	text-align: center;
+}
+main div{
+		margin : auto;
+}
+
+
+input{
+	border: none;
+}
+
+textarea {
+	border: none;
+	width: 100%;
+}
+#content2{
+	height: 300px;
+	
+}
+#title{
+	
+	border-bottom: 3px solid black;
+	height: 10%;
+	
+}
+#btnArea{
+	text-align : center;
+}

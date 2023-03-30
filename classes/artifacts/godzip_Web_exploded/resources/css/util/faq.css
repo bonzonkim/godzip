@@ -1,0 +1,46 @@
+
+div table{
+	margin: auto;
+	height: 500px;
+
+}
+#table-wrap{
+	
+	height: 500px;
+}
+main{
+	height: 700px;
+}
+#table-wrap{
+	height: 500px;
+	box-sizing: border-box;
+}
+#faqtable{
+	padding-top: 50px;
+	width: 70%;
+	text-align: center;;
+}
+.no{
+	width: 10%;
+}
+.title{
+	width: 80%;
+}
+.write{
+	width: 10%;
+
+}
+#faqname{
+	text-align: center;
+    background-color: #FCECD3;
+}
+td{
+	border-top: 3px solid black;
+}
+#prev-next-btn-wrap{
+	text-align: center;
+}
+#button-wrap{
+ text-align: right;
+ margin-right: 20%;
+}

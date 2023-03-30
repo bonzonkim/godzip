@@ -1,0 +1,61 @@
+/* 테이블을 가운데 정렬 */
+table {
+  margin: 0 auto;
+}
+
+/* 각 게시글과 네비게이션 구분을 위한 border 추가 */
+.list {
+  border-bottom: 1px solid gray;
+}
+
+/* 네비게이션 버튼 스타일링 */
+.listButton {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.listnum {
+  padding: 5px 10px;
+}
+
+.listnum a {
+  color: black;
+}
+
+/* 검색창 스타일링 */
+.searchBox {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.searchButtom {
+  display: flex;
+  align-items: center;
+}
+
+.searchList select {
+  padding: 5px;
+  border: 1px solid gray;
+  border-radius: 5px 0 0 5px;
+}
+
+.searchbot input[type="text"] {
+  padding: 5px;
+  border: 1px solid gray;
+  border-right: none;
+  border-radius: 0 5px 5px 0;
+}
+
+#searchIcon img {
+  height: 20px;
+  margin: 0 5px;
+}
+
+#reviewTitle {
+  white-space: nowrap; /* 줄 바꿈 방지 */
+  overflow: hidden; /* 넘치는 부분 감춤 */
+  text-overflow: ellipsis; /* 넘치는 부분 생략 표시 */
+}
+

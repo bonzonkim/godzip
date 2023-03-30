@@ -14,12 +14,17 @@
 <div class="bottom_info">
     <div id="fixedButton" onclick="TOP();">TOP</div>
     <div class="footer1">
-        <div class="w companyInfo"><a href="">회사소개</a></div>
+
+
+        <div class="w companyInfo"><a href="/press/list?page=1">보도자료</a></div>
         <div class="line"></div>
+
         <div class="w companyLoc"><a href="/tot/contact_us.jsp">회사위치</a></div>
         <div class="line"></div>
+
         <div class="w Press"><a href="/tot/recruit.jsp">채용공고</a></div>
         <div class="line"></div>
+
         <div class="w Help"><a href="/tot/customer_center.jsp">고객센터</a></div>
     </div>
 

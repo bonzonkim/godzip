@@ -67,6 +67,7 @@ public class MemberDao {
 				String gradeNo = rs.getString("GRADE_NO");
 				String enrollDate = rs.getString("ENROLL_DATE");
 				String secNo = rs.getString("SEC_NO");
+				String secQuizAnswer = rs.getString("SEC_QUIZ_ANSWER");
 				String lastVisit = rs.getString("LAST_VISIT");
 				String totalVisit = rs.getString("TOTAL_VISIT");
 				String dob = rs.getString("DOB");
@@ -81,18 +82,44 @@ public class MemberDao {
 				loginMember.setNick(nick);
 				loginMember.setGradeNo(gradeNo);
 				loginMember.setEnrollDate(enrollDate);
-				loginMember.setEnrollDate(secNo);
-				loginMember.setEnrollDate(lastVisit);
-				loginMember.setEnrollDate(totalVisit);
-				loginMember.setEnrollDate(dob);
-				loginMember.setEnrollDate(tel);
-				loginMember.setEnrollDate(email);
+				loginMember.setSecNo(secNo);
+				loginMember.setSecQuizAnswer(secQuizAnswer);
+				loginMember.setLastVisit(lastVisit);
+				loginMember.setTotalVisit(totalVisit);
+				loginMember.setDob(dob);
+				loginMember.setTel(tel);
+				loginMember.setEmail(email);
 			}
 			JDBCTemplate.close(rs);
 			JDBCTemplate.close(pstmt);
 			
 			return loginMember;
 			
+		}
+
+		//정보 수정
+		public int edit(Connection conn, MemberVo vo) throws Exception {
+
+			 String sql = "UPDATE MEMBER_INFO "
+			 		+ "SET PWD =? , EMAIL = ? , NICK = ? "
+			 		+ "WHERE ID = ?";
+			    PreparedStatement pstmt = conn.prepareStatement(sql);
+			    pstmt.setString(1, vo.getPwd());
+			    pstmt.setString(2, vo.getEmail());
+			    pstmt.setString(3, vo.getNick());
+			    pstmt.setString(4, vo.getId());
+//			    pstmt.setString(5, vo.getPwd());
+//			    pstmt.setString(4, vo.getNick());
+//			    pstmt.setString(5, vo.getTel());
+//			    pstmt.setString(6, vo.getDob());
+//			    pstmt.setString(7, vo.getSecNo().toString());
+//			    pstmt.setString(8, vo.getSecQuizAnswer());
+//			    pstmt.setString(9, Integer.toString(1));
+			    int result = pstmt.executeUpdate();
+
+			    JDBCTemplate.close(pstmt);
+			    
+			    return result;
 		}
 
 	}

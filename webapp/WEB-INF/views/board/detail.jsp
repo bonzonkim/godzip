@@ -11,21 +11,36 @@
 <head>
     <title>Title</title>
 </head>
+<link rel="stylesheet" type="text/css" href="/resources/css/detail/detail.css">
 <body>
+<div id="wrapper">
+        <%@include file="/WEB-INF/views/common/header.jsp"%>
 
+        <form>
+            <div class="form-group">
+                <label for="title">제목</label>
+                <input type="text" id="title" value="${boardVo.title}" readonly>
+            </div>
+            <div class="form-group">
+                <label for="writer">작성자</label>
+                <input type="text" id="writer" value="${boardVo.writer}" readonly>
+            </div>
+            <div class="form-group">
+                <label for="enroll_date">작성일시</label>
+                <span id="enroll_date">${boardVo.enroll_date}</span>
+            </div>
+            <div class="form-group">
+                <label for="content">내용</label>
+                <textarea id="content" readonly>${boardVo.content}</textarea>
+            </div>
+            <div class="form-group">
+                <a download href="/resources/img/${boardVo.changeName}.png" class="button">파일 다운로드</a>
+                <img src="/resources/img/${boardVo.changeName}" alt="dddddd" class="image">
+            </div>
+        </form>
 
-    <div id="wrapper">
-      <%@include file="/WEB-INF/views/common/header.jsp"%>
-
-
-      제목 <input type="text" value="${boardVo.title}" readonly>
-      작성자 <input type="text" value="${boardVo.writer}" readonly>
-      작성일시 <span>${boardVo.enroll_date}</span>
-      <br>
-      내용 <textarea name="" id="" cols="30" rows="10" readonly>${boardVo.content}</textarea>
-      <a download href="/resources/img/${boardVo.changeName}.png" >파일 다운로드</a>
-      <img src="/resources/img/${boardVo.changeName}" alt="dddddd">
+        <%@ include file = "/WEB-INF/views/board/comment.jsp" %>
+        <%@ include file="/WEB-INF/views/common/footer.jsp" %>
     </div>
-
 </body>
 </html>

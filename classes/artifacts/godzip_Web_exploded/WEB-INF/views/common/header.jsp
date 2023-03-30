@@ -1,3 +1,4 @@
+<%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ taglib prefix="semi" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
@@ -15,7 +16,7 @@
 <title>Insert title here</title>
 <link rel="stylesheet" href="/resources/css/common/publicTopStyle.css">
   <link rel="stylesheet" href="/resources/css/common/hoverMenu.css">
-  <script defer src = "/resources/js/topHoverMenu.js"></script>
+  <!-- <script defer src = "/resources/js/topHoverMenu.js"></script> -->
 </head>
 
 <semi:if test="${alertMsg != null}">
@@ -41,7 +42,7 @@
             </semi:if>
             <semi:if test="${loginMember != null}">
                 <input type="button" class="searchButton" name="login" value="LogOut" onclick="location.href = '/member/logout';">
-                <input type="button" class="searchButton" name="logout" value="MyPage" onclick="location.href = '/tot/mypage.jsp';">
+                <input type="button" class="searchButton" name="logout" value="MyPage" onclick="location.href = '/post/mypage?page=1';">
             </semi:if>
             </div>
         </div>

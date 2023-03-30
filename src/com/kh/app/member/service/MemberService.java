@@ -49,8 +49,19 @@ public class MemberService {
 			return loginMember;
 		}//method
 
-		
-	}
 
 
+		//정보 수정
+		public int edit(MemberVo vo) throws Exception {
+			
+			Connection conn = JDBCTemplate.getConnection();
+			
+			MemberDao dao = new MemberDao();
+			int result = dao.edit(conn, vo);
+			
+			JDBCTemplate.close(conn);
+			
+			return result;
+		}
 
+}
